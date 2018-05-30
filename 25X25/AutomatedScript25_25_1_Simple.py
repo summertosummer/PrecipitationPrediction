@@ -79,21 +79,6 @@ def create_training_and_testing_data(grid_x, grid_y):
 def run_models(grid_y, grid_x):
     X, Y = create_training_and_testing_data(grid_x, grid_y)
     data = Table(X, Y)
-    # print(data.Y)
-    # np.savetxt('data/' + str(grid_x) + '_' + str(grid_y) + '.csv', np.array(data), delimiter=',', fmt='%10.5f')
-    # print(out_data.domain)
-    # print(out_data.Y)
-
-    # feature_method = og.preprocess.score.UnivariateLinearRegression()
-    # selector = og.preprocess.SelectBestFeatures(method=feature_method, k=10)
-    # out_data2 = selector(data)
-    # plot_input(out_data2.X, out_data2.Y)
-    # print(out_data2.domain)
-
-    # pca = PCA(n_components=5)
-    # model = pca(out_data2)
-    # out_data = model(out_data2)
-    # print(out_data.domain)
 
     test = og.data.Table(data.domain, random.sample(data, 60))
     train = og.data.Table(data.domain, [d for d in data if d not in test])
@@ -278,18 +263,6 @@ for grid_y in range(1, 46):
             print('nnr RMSE:', rmse[2])
             print('svm RMSE:', rmse[3])
             print('knn RMSE:', rmse[4])
-
-            # print('R2')
-            # print('lin R2:', r2_score(test.Y, linPredict))
-            # print('rf R2:', r2_score(test.Y, rfPredict))
-            # print('nnr R2:', r2_score(test.Y, nnrPredict))
-            # print('svm R2:', r2_score(test.Y, svmPredict))
-            # print('knn R2:', r2_score(test.Y, knnPredict))
-
-            # for r in regressors:
-            #     # print(r(test))
-            #     plot_result(r(test), test)
-            # plot_result(predictions[4], test)
 
             best_rmse_name = ''
             best_ind_rmse = np.argmin(rmse)
