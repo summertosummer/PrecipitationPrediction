@@ -1,0 +1,22 @@
+TY  - CONF
+AU  - Hernández, Emilcy
+AU  - Sanchez-Anguix, Victor
+AU  - Julian, Vicente
+AU  - Palanca, Javier
+AU  - Duque, Néstor
+ED  - Martínez-Álvarez, Francisco
+ED  - Troncoso, Alicia
+ED  - Quintián, Héctor
+ED  - Corchado, Emilio
+PY  - 2016
+DA  - 2016//
+TI  - Rainfall Prediction: A Deep Learning Approach
+BT  - Hybrid Artificial Intelligent Systems
+SP  - 151
+EP  - 162
+PB  - Springer International Publishing
+CY  - Cham
+AB  - Previous work has shown that the prediction of meteorological conditions through methods based on artificial intelligence can get satisfactory results. Forecasts of meteorological time series can help decision-making processes carried out by organizations responsible of disaster prevention. We introduce an architecture based on Deep Learning for the prediction of the accumulated daily precipitation for the next day. More specifically, it includes an autoencoder for reducing and capturing non-linear relationships between attributes, and a multilayer perceptron for the prediction task. This architecture is compared with other previous proposals and it demonstrates an improvement on the ability to predict the accumulated daily precipitation for the next day.
+SN  - 978-3-319-32034-2
+ID  - 10.1007/978-3-319-32034-2_13
+ER  - 

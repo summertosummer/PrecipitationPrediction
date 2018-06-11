@@ -1,0 +1,10 @@
+Wei-Chiang Hong,
+Rainfall forecasting by technological machine learning models,
+Applied Mathematics and Computation,
+Volume 200, Issue 1,
+2008,
+Pages 41-57,
+ISSN 0096-3003,
+https://doi.org/10.1016/j.amc.2007.10.046.
+(http://www.sciencedirect.com/science/article/pii/S0096300307010843)
+Keywords: Rainfall forecasting; Support vector regression (SVR); Chaotic particle swarm optimization algorithm (CPSO); Recurrent SVR; Machine learning

@@ -1,0 +1,10 @@
+Beda Luitel, Gabriele Villarini, Gabriel A. Vecchi,
+Verification of the skill of numerical weather prediction models in forecasting rainfall from U.S. landfalling tropical cyclones,
+Journal of Hydrology,
+Volume 556,
+2018,
+Pages 1026-1037,
+ISSN 0022-1694,
+https://doi.org/10.1016/j.jhydrol.2016.09.019.
+(http://www.sciencedirect.com/science/article/pii/S0022169416305704)
+Keywords: Tropical cyclones; Rainfall; Numerical weather predictions; North Atlantic; Short-term forecasting
