@@ -1,0 +1,56 @@
+Initial dataset
+|
+read netcdf variable "acc03_"
+|
+single_netcdf[day, time, model, y_axis, x_axix] // model = 0 was real verification data
+|
+MAE and RMSE
+|
+45 X 67 (25X25 summing dataset)
+|
+Calculated MAE and RMSE of 45 X 67 dataset
+|
+feature selection and feature extraction
+|
+fit every single grid in different machine learning model
+|
+Find the best model for every grid
+|
+stored prediction data and other information
+|
+compare the error rates
+
+|
+
+######## REPEATED ########## 
+76 X 111 (15X15 summing dataset)
+|
+Calculated MAE and RMSE of 76 X 111 dataset
+|
+feature selection and feature extraction
+|
+fit every single grid in different machine learning model
+|
+Find the best model for every grid
+|
+stored prediction data and other information
+|
+compare the error rates
+######## REPEATED ##########
+
+|
+
+######## REPEATED ##########
+231 X 336 (15X15 summing dataset)
+|
+Calculated MAE and RMSE of 231 X 336 dataset
+|
+feature selection and feature extraction
+|
+fit every single grid in different machine learning model
+|
+Find the best model for every grid
+|
+stored prediction data and other information
+|
+compare the error rates
