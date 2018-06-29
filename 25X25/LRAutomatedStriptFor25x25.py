@@ -15,6 +15,18 @@ from Orange.projection import PCA
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import pandas as pd
+import os
+
+if not os.path.exists('models25_25_9'):
+    os.makedirs('models25_25_9')
+if not os.path.exists('test'):
+    os.makedirs('test')
+if not os.path.exists('pred'):
+    os.makedirs('pred')
+if not os.path.exists('mae'):
+    os.makedirs('mae')
+if not os.path.exists('rmse'):
+    os.makedirs('rmse')
 
 #access netcdf data file
 netcdf_entire_dataset = Dataset("summing_dataset.nc", "r")
@@ -175,17 +187,20 @@ def best_mae(minMAE, grid_y, grid_x):
     df1 = dfMAE[(dfMAE[0] == str(grid_y)) & (dfMAE[1] == str(' ') + str(grid_x))]
 
     flag = True
+    arr = []
     existing_model_value1 = 999999 # considering a high value
     for z in range(2, 26): # for each models
         value = pd.to_numeric(dfMAE[z][df1.index], errors='coerce')
         # print(value.values[0])
         if value.values[0] < existing_model_value1:
             existing_model_value1 = value.values[0] # taking the lowest MAE
+        if value.values[0] < minMAE: arr.append(1)
+        else: arr.append(0)
 
     if existing_model_value1 < minMAE:
         flag = False
 
-    return flag
+    return flag, arr
 
 # finding if the new RMSE is better then the old existing models' RMSE or not
 # existing_model_value2 = 0
@@ -196,17 +211,20 @@ def best_rmse(minRMSE, grid_y, grid_x):
     df1 = dfRMSE[(dfRMSE[0] == str(grid_y)) & (dfRMSE[1] == str(' ') + str(grid_x))]
 
     flag = True
+    arr = []
     existing_model_value2 = 999999
     for z in range(2, 26): # for each models
         value = pd.to_numeric(dfRMSE[z][df1.index], errors='coerce')
         # print(value.values[0])
         if value.values[0] < existing_model_value2:
             existing_model_value2 = value.values[0] #taking the lowest RMSE
+        if value.values[0] < minRMSE: arr.append(1)
+        else: arr.append(0)
 
     if existing_model_value2 < minRMSE:
         flag = False
 
-    return flag
+    return flag, arr
 
 
 # saving the model info into file
@@ -228,6 +246,12 @@ check.write(str('Old Model Best RMSE Value'))
 check.write(', ')
 check.write(str('Old Model Best MAE Value'))
 check.write(', ')
+check.write(str('Old RMSE better in'))
+check.write(', ')
+check.write(str('Old MAE Better in'))
+check.write(', ')
+check.write(str('Old RMSE and MAE Better in'))
+check.write(', ')
 check.write(str('Cumulative Accuracy RMSE'))
 check.write(', ')
 check.write(str('Cumulative Accuracy MAE'))
@@ -241,12 +265,13 @@ for grid_y in range(1, 45): # for every y
         print('=================PLACE:', grid_x, grid_y, '=====================')
 
         flag = True
-        for _ in range(15): # looping 15 times to find the best model
+        for _ in range(1): # looping 15 times to find the best model
             try:
                 mae, rmse, predictions, test = run_models(grid_y, grid_x)
                 minRMSE = np.amin(rmse) # minimum RMSE from the new models
                 # total += 1
-                if best_rmse(minRMSE, grid_y, grid_x): # checking if it is the best one
+                getFlag, _ = best_rmse(minRMSE, grid_y, grid_x)
+                if getFlag: # checking if it is the best one
                     print('found the best')
                     break
             except:
@@ -261,9 +286,11 @@ for grid_y in range(1, 45): # for every y
             total += 1
             minMAE = np.amin(mae) # minimum MAE of new models
             minRMSE = np.amin(rmse) # minimum RMSE of new models
-            if best_mae(minMAE, grid_y, grid_x):
+            getFlagMAE, arrMAE = best_mae(minMAE, grid_y, grid_x)
+            getFlagRMSE, arrRMSE = best_rmse(minRMSE, grid_y, grid_x)
+            if getFlagMAE:
                 countMAE += 1
-            if best_rmse(minRMSE, grid_y, grid_x):
+            if getFlagRMSE:
                 countRMSE += 1
 
             # saving mae, rmse, prediction and target data
@@ -350,6 +377,12 @@ for grid_y in range(1, 45): # for every y
             check.write(str(existing_model_value2))
             check.write(', ')
             check.write(str(existing_model_value1))
+            check.write(', ')
+            check.write(str(sum(arrRMSE)))
+            check.write(', ')
+            check.write(str(sum(arrMAE)))
+            check.write(', ')
+            check.write(str(sum([i == j and i == 1 for i, j in zip(arrRMSE, arrMAE)])))
             check.write(', ')
             check.write(str(per_rmse))
             check.write(', ')
