@@ -1,0 +1,9 @@
+Svante Wold, Kim Esbensen, Paul Geladi,
+Principal component analysis,
+Chemometrics and Intelligent Laboratory Systems,
+Volume 2, Issues 1–3,
+1987,
+Pages 37-52,
+ISSN 0169-7439,
+https://doi.org/10.1016/0169-7439(87)80084-9.
+(http://www.sciencedirect.com/science/article/pii/0169743987800849)

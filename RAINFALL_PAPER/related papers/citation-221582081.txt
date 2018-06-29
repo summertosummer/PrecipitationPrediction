@@ -1,0 +1,1 @@
+Verleysen, Michel & François, Damien. (2005). The Curse of Dimensionality in Data Mining and Time Series Prediction. Lecture Notes in Computer Science. 3512. 758-770. 10.1007/11494669_93. 
