@@ -129,8 +129,8 @@ def run_models(grid_y, grid_x):
     # knn = KNeighborsRegressor(n_neighbors=7) #knn from sci-kit learn, rest of them are from Orange
 
     # fitting data into ML models
-    learners = [lin]#, rf, nnr, svm]
-    regressors = [learner(train) for learner in learners]
+    # learners = [lin]#, rf, nnr, svm]
+    # regressors = [learner(train) for learner in learners]
     # knn.fit(train.X, train.Y)
 
     #saving the new trained models
@@ -147,7 +147,8 @@ def run_models(grid_y, grid_x):
 
     # predicting target for testing dataset
     # print((r(test)[0] for r in regressors))
-    linPredict = lin.predict(test.X)
+    X_test = poly.fit_transform(test.X)
+    linPredict = lin.predict(X_test)
     # linPredict = regressors[0](test)
     # rfPredict = regressors[1](test)
     # nnrPredict = regressors[2](test)
@@ -241,7 +242,7 @@ def best_rmse(minRMSE, grid_y, grid_x):
 
 
 # saving the model info into file
-check = open('ModelsInfo.csv', 'w')
+check = open('PolyModelsInfo25x25.csv', 'w')
 check.truncate()
 check.write(str('Y'))
 check.write(', ')
