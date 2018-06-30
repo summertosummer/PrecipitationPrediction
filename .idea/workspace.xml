@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a02a84d7-de6c-410f-815a-fe5222bb6666" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PlotIfYouCan.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/ModelsInfoLR.xlsx" afterPath="$PROJECT_DIR$/25X25/ModelsInfoLR.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlotIfYouCan.py" afterPath="$PROJECT_DIR$/PlotIfYouCan.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,7 +15,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$LRAutomatedStriptFor25x25.coverage" NAME="LRAutomatedStriptFor25x25 Coverage Results" MODIFIED="1530249497126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/25X25" />
-    <SUITE FILE_PATH="coverage/PrecipitationPrediction$PlotIfYouCan.coverage" NAME="PlotIfYouCan Coverage Results" MODIFIED="1530314033938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PrecipitationPrediction$PlotIfYouCan.coverage" NAME="PlotIfYouCan Coverage Results" MODIFIED="1530331300010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -22,11 +23,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="LRAutomatedStriptFor25x25.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LRAutomatedStriptFor25x25.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/25X25/LRAutomatedStriptFor25x25.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="999">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -34,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlotIfYouCan.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PlotIfYouCan.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlotIfYouCan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+            <state relative-caret-position="133">
+              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -95,6 +96,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -107,10 +109,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PrecipitationPrediction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PrecipitationPrediction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="25X25" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -394,10 +409,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1060" extended-state="7" />
-    <editor active="false" />
+    <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19978517" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20247047" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -430,6 +445,26 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/25X25/LRAutomatedStriptFor25x25.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlotIfYouCan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25X25/LRAutomatedStriptFor25x25.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6750">
           <caret line="267" column="24" lean-forward="false" selection-start-line="267" selection-start-column="24" selection-end-line="267" selection-end-column="24" />
           <folding>
@@ -442,9 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7236">
           <caret line="285" column="24" lean-forward="false" selection-start-line="285" selection-start-column="24" selection-end-line="285" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -452,9 +484,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -472,9 +501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -489,9 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9666">
           <caret line="375" column="36" lean-forward="false" selection-start-line="375" selection-start-column="36" selection-end-line="375" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -509,9 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -526,9 +546,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -578,9 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7236">
           <caret line="285" column="24" lean-forward="false" selection-start-line="285" selection-start-column="24" selection-end-line="285" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -588,9 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
           <caret line="286" column="27" lean-forward="false" selection-start-line="286" selection-start-column="27" selection-end-line="286" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -598,7 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -610,36 +620,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/25X25/LRAutomatedStriptFor25x25.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/matplotlib/axes/_axes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="-1903">
+          <caret line="4989" column="8" lean-forward="false" selection-start-line="4989" selection-start-column="8" selection-end-line="4989" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25X25/MAEForEachXYFull.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-488">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25X25/MAEForEachXY25_25_9.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="2266" column="4" lean-forward="false" selection-start-line="2266" selection-start-column="4" selection-end-line="2266" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25X25/RMSEForEachXY25_25_9.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="60" column="39" lean-forward="false" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlotIfYouCan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/matplotlib/axes/_axes.py">
+    <entry file="file://$PROJECT_DIR$/25X25/LRAutomatedStriptFor25x25.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1903">
-          <caret line="4989" column="8" lean-forward="false" selection-start-line="4989" selection-start-column="8" selection-end-line="4989" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="3152" column="19" lean-forward="false" selection-start-line="3152" selection-start-column="19" selection-end-line="3152" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlotIfYouCan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        <state relative-caret-position="999">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
