@@ -2,69 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a02a84d7-de6c-410f-815a-fe5222bb6666" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/10_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/10_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/11_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/11_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/12_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/12_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/13_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/13_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/14_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/14_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/15_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/15_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/16_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/16_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/17_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/17_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/18_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/18_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/19_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/19_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/1_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/1_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/20_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/20_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/21_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/21_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/22_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/22_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/23_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/23_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/24_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/24_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/25_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/25_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/26_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/26_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/27_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/27_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/28_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/28_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/29_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/29_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/2_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/2_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/30_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/30_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/31_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/31_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/32_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/32_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/33_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/33_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/34_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/34_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/35_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/35_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/36_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/36_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/37_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/37_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/3_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/3_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/4_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/4_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/5_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/5_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/6_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/6_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/7_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/7_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/8_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/8_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/9_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/9_1_lin.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/LRAutomatedStriptFor25x25.py" afterPath="$PROJECT_DIR$/25X25/LRAutomatedStriptFor25x25.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/mae/27_1.csv" afterPath="$PROJECT_DIR$/25X25/mae/27_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/mae/28_1.csv" afterPath="$PROJECT_DIR$/25X25/mae/28_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/mae/30_1.csv" afterPath="$PROJECT_DIR$/25X25/mae/30_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/mae/31_1.csv" afterPath="$PROJECT_DIR$/25X25/mae/31_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/mae/32_1.csv" afterPath="$PROJECT_DIR$/25X25/mae/32_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/mae/33_1.csv" afterPath="$PROJECT_DIR$/25X25/mae/33_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/mae/34_1.csv" afterPath="$PROJECT_DIR$/25X25/mae/34_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/mae/35_1.csv" afterPath="$PROJECT_DIR$/25X25/mae/35_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/pred/27_1.csv" afterPath="$PROJECT_DIR$/25X25/pred/27_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/pred/28_1.csv" afterPath="$PROJECT_DIR$/25X25/pred/28_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/pred/30_1.csv" afterPath="$PROJECT_DIR$/25X25/pred/30_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/pred/31_1.csv" afterPath="$PROJECT_DIR$/25X25/pred/31_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/pred/32_1.csv" afterPath="$PROJECT_DIR$/25X25/pred/32_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/pred/33_1.csv" afterPath="$PROJECT_DIR$/25X25/pred/33_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/pred/34_1.csv" afterPath="$PROJECT_DIR$/25X25/pred/34_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/pred/35_1.csv" afterPath="$PROJECT_DIR$/25X25/pred/35_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/rmse/27_1.csv" afterPath="$PROJECT_DIR$/25X25/rmse/27_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/rmse/28_1.csv" afterPath="$PROJECT_DIR$/25X25/rmse/28_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/rmse/30_1.csv" afterPath="$PROJECT_DIR$/25X25/rmse/30_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/rmse/31_1.csv" afterPath="$PROJECT_DIR$/25X25/rmse/31_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/rmse/32_1.csv" afterPath="$PROJECT_DIR$/25X25/rmse/32_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/rmse/33_1.csv" afterPath="$PROJECT_DIR$/25X25/rmse/33_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/rmse/34_1.csv" afterPath="$PROJECT_DIR$/25X25/rmse/34_1.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/rmse/35_1.csv" afterPath="$PROJECT_DIR$/25X25/rmse/35_1.csv" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -86,8 +24,8 @@
       <file leaf-file-name="LRAutomatedStriptFor25x25.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/25X25/LRAutomatedStriptFor25x25.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="173" column="28" lean-forward="true" selection-start-line="173" selection-start-column="28" selection-end-line="173" selection-end-column="28" />
+            <state relative-caret-position="459">
+              <caret line="296" column="29" lean-forward="true" selection-start-line="296" selection-start-column="29" selection-end-line="296" selection-end-column="29" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -789,8 +727,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/25X25/LRAutomatedStriptFor25x25.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="173" column="28" lean-forward="true" selection-start-line="173" selection-start-column="28" selection-end-line="173" selection-end-column="28" />
+        <state relative-caret-position="459">
+          <caret line="296" column="29" lean-forward="true" selection-start-line="296" selection-start-column="29" selection-end-line="296" selection-end-column="29" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

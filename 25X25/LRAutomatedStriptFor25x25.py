@@ -51,8 +51,8 @@ with open('../random30.csv') as csvf:
     index30 = indexi30[0]
 
 #read MAE and RMSE files
-dfMAE = pd.read_csv('MAE.csv', header=None)
-dfRMSE = pd.read_csv('RMSE.csv', header=None)
+dfMAE = pd.read_csv('MAE25x25.csv', header=None)
+dfRMSE = pd.read_csv('RMSE25x25.csv', header=None)
 
 '''
 # commented out plotting area, because Dr. Hamdy's machine doesn't have pyplot installed
