@@ -176,18 +176,18 @@ def run_models(grid_y, grid_x):
     # print(out_data.domain)
 
     # ML models
-    lin = make_pipeline(PolynomialFeatures(2), Ridge(alpha=100))
+    # lin = make_pipeline(PolynomialFeatures(2), Ridge(alpha=100))
     # X_transform = poly.fit_transform(train.X)
-    # lin = og.regression.linear.LinearRegressionLearner()
+    lin = og.regression.linear.PolynomialLearner(degree = 2)
     # rf = og.regression.random_forest.RandomForestRegressionLearner()
     # nnr = og.regression.NNRegressionLearner()
     # svm = og.regression.SVRLearner()
     # knn = KNeighborsRegressor(n_neighbors=7) #knn from sci-kit learn, rest of them are from Orange
 
     # fitting data into ML models
-    # learners = [lin]#, rf, nnr, svm]
-    # regressors = [learner(train) for learner in learners]
-    lin.fit(train.X, train.Y)
+    learners = [lin]#, rf, nnr, svm]
+    regressors = [learner(train) for learner in learners]
+    # lin.fit(train.X, train.Y)
     # knn.fit(train.X, train.Y)
     # print(lin.coef_)
     # np.savetxt('p_coef/' + str(grid_x) + '_' + str(grid_y) + '.csv', lin.coef_, delimiter=',', fmt='%10.5f')
@@ -207,8 +207,8 @@ def run_models(grid_y, grid_x):
     # predicting target for testing dataset
     # print((r(test)[0] for r in regressors))
     # X_test = poly.fit_transform(test.X)
-    linPredict = lin.predict(test.X)
-    # linPredict = regressors[0](test)
+    # linPredict = lin.predict(test.X)
+    linPredict = regressors[0](test)
     # rfPredict = regressors[1](test)
     # nnrPredict = regressors[2](test)
     # svmPredict = regressors[3](test)
