@@ -32,7 +32,7 @@ def data_visualization_2dr(w_data, title, i=0, visualize=True):
         plt.title(title)
         plt.colorbar()
         # plt.savefig('com/fig' + str(i) + '.png')
-        plt.clim(-100, 0)
+        plt.clim(0, 25)
         plt.show()
         plt.close()
 
@@ -47,7 +47,7 @@ def display_image(F, **kwargs):
 #read MAE and RMSE files
 readData = pd.read_csv('25x25/MAE_25x25_Comparison.csv', header=None)
 
-rmse = pd.to_numeric(np.array(readData[33])[1:]).reshape((44, 65))
+rmse = pd.to_numeric(np.array(readData[27])[1:]).reshape((44, 65))
 print(rmse)
 data_visualization_2dr(w_data=rmse, title='nothing')
 # display_image(rmse)
