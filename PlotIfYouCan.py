@@ -22,8 +22,8 @@ import os
 def data_visualization_2dr(w_data, title, i=0, visualize=True):
     if visualize:
         plt.axis([0, len(w_data[0]), 0, len(w_data)])
-        w_data[w_data >= 0] = 0
-        w_data[w_data <= -100] = 0
+        w_data[w_data <= 0] = 0
+        w_data[w_data >= 100] = 0
         x, y = w_data.nonzero()
         # x = range(0, 65)
         # y = range(0, 44)
@@ -40,14 +40,14 @@ def display_image(F, **kwargs):
     plt.figure()
     # F[F > -1000] = 0
     plt.imshow(F, **kwargs, origin='lower', cmap='jet')
-    plt.clim(-2000, 0)
+    plt.clim(-500, 500)
     plt.colorbar()
     plt.show()
 
 #read MAE and RMSE files
-readData = pd.read_csv('../ErrorAnalysis/comparing.csv', header=None)
+readData = pd.read_csv('25x25/MAE_25x25_Comparison.csv', header=None)
 
-rmse = pd.to_numeric(np.array(readData[31])[1:]).reshape((46, 67))
+rmse = pd.to_numeric(np.array(readData[33])[1:]).reshape((44, 65))
 print(rmse)
 data_visualization_2dr(w_data=rmse, title='nothing')
-display_image(rmse)
+# display_image(rmse)
