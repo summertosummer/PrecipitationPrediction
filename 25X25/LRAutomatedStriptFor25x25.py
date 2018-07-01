@@ -16,6 +16,8 @@ from sklearn.neighbors import KNeighborsRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import pandas as pd
 import os
+from sklearn import datasets, linear_model
+from sklearn.linear_model import LinearRegression
 
 if not os.path.exists('models25_25_9'):
     os.makedirs('models25_25_9')
@@ -31,6 +33,8 @@ if not os.path.exists('features'):
     os.makedirs('features')
 if not os.path.exists('pca'):
     os.makedirs('pca')
+if not os.path.exists('coef'):
+    os.makedirs('coef')
 
 #access netcdf data file
 netcdf_entire_dataset = Dataset("F:/dataset/rain_data/summing_dataset.nc", "r")
@@ -47,8 +51,8 @@ with open('../random30.csv') as csvf:
     index30 = indexi30[0]
 
 #read MAE and RMSE files
-dfMAE = pd.read_csv('MAE25x25.csv', header=None)
-dfRMSE = pd.read_csv('RMSE25x25.csv', header=None)
+dfMAE = pd.read_csv('MAE.csv', header=None)
+dfRMSE = pd.read_csv('RMSE.csv', header=None)
 
 '''
 # commented out plotting area, because Dr. Hamdy's machine doesn't have pyplot installed
@@ -155,28 +159,32 @@ def run_models(grid_y, grid_x):
     # print(out_data.domain)
     # print(out_data.Y)
 
-    feature_method = og.preprocess.score.UnivariateLinearRegression()  # feature selection
-    selector = og.preprocess.SelectBestFeatures(method=feature_method, k=50)  # taking 50 features out of 216
-    out_data22 = selector(data2)  # this is the new dataset with 50 features
+    feature_method2 = og.preprocess.score.UnivariateLinearRegression()  # feature selection
+    selector2 = og.preprocess.SelectBestFeatures(method=feature_method2, k=50)  # taking 50 features out of 216
+    out_data22 = selector2(data2)  # this is the new dataset with 50 features
     # plot_input(out_data2.X, out_data2.Y)
     # print(out_data2.domain)
 
-    pca = PCA(n_components=5)  # PCA with 5 components
-    model = pca(out_data22)
-    test = model(out_data22)
+    pca2 = PCA(n_components=5)  # PCA with 5 components
+    model2 = pca2(out_data22)
+    test = model2(out_data22)
     # print(out_data.domain)
 
     # ML models
-    lin = og.regression.linear.LinearRegressionLearner()
+    lin = LinearRegression()
+    # lin = og.regression.linear.LinearRegressionLearner()
     # rf = og.regression.random_forest.RandomForestRegressionLearner()
     # nnr = og.regression.NNRegressionLearner()
     # svm = og.regression.SVRLearner()
     # knn = KNeighborsRegressor(n_neighbors=7) #knn from sci-kit learn, rest of them are from Orange
 
     # fitting data into ML models
-    learners = [lin]#, rf, nnr, svm]
-    regressors = [learner(train) for learner in learners]
+    # learners = [lin]#, rf, nnr, svm]
+    # regressors = [learner(train) for learner in learners]
+    lin.fit(train.X, train.Y)
     # knn.fit(train.X, train.Y)
+    # print(lin.coef_)
+    np.savetxt('coef/' + str(grid_x) + '_' + str(grid_y) + '.csv', lin.coef_, delimiter=',', fmt='%10.5f')
 
     #saving the new trained models
     with open("models25_25_9/"+str(grid_x)+"_"+str(grid_y)+"_lin.pickle", "wb") as f:
@@ -192,7 +200,8 @@ def run_models(grid_y, grid_x):
 
     # predicting target for testing dataset
     # print((r(test)[0] for r in regressors))
-    linPredict = regressors[0](test)
+    linPredict = lin.predict(test.X)
+    # linPredict = regressors[0](test)
     # rfPredict = regressors[1](test)
     # nnrPredict = regressors[2](test)
     # svmPredict = regressors[3](test)
