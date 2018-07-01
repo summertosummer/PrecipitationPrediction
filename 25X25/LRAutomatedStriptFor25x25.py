@@ -27,14 +27,28 @@ if not os.path.exists('mae'):
     os.makedirs('mae')
 if not os.path.exists('rmse'):
     os.makedirs('rmse')
+if not os.path.exists('features'):
+    os.makedirs('features')
+if not os.path.exists('pca'):
+    os.makedirs('pca')
 
 #access netcdf data file
-netcdf_entire_dataset = Dataset("summing_dataset.nc", "r")
+netcdf_entire_dataset = Dataset("F:/dataset/rain_data/summing_dataset.nc", "r")
 rain_models = netcdf_entire_dataset.variables['summing_models']
 
+with open('../random70.csv') as csvf:
+    ind70 = csv.reader(csvf)
+    indexi70 = list(ind70)
+    index70 = indexi70[0]
+
+with open('../random30.csv') as csvf:
+    ind30 = csv.reader(csvf)
+    indexi30 = list(ind30)
+    index30 = indexi30[0]
+
 #read MAE and RMSE files
-dfMAE = pd.read_csv('MAE.csv', header=None)
-dfRMSE = pd.read_csv('RMSE.csv', header=None)
+dfMAE = pd.read_csv('MAE25x25.csv', header=None)
+dfRMSE = pd.read_csv('RMSE25x25.csv', header=None)
 
 '''
 # commented out plotting area, because Dr. Hamdy's machine doesn't have pyplot installed
@@ -57,11 +71,33 @@ def plot_input(x, y):
 '''
 
 # creating the whole dataset (inputs and target), not dividing into training and testing here
-def create_training_and_testing_data(grid_x, grid_y):
+def create_training_data(grid_x, grid_y):
     data_x = [] # inputs
     data_y = [] # target
     tr_count = 0
-    for i in range(20): # working with 20 days
+    for i in index70: # working with 20 days
+        for j in range(10): # 10 times in each day
+            x = []
+            for k in range(1, 25): # 24 models as input
+                # print('model: ', k)
+                b = rain_models[i, j, k, grid_y - 1:grid_y + 2, grid_x - 1:grid_x + 2] #taking an area of 9X9 from every model
+                rain100 = np.array(b)
+                x.append(list(it.chain.from_iterable(rain100)))  # flatten the list
+
+            bt = rain_models[i, j, 0, grid_y, grid_x] #taking the real data as target, zero in the third dimention is for real data
+            rainR = bt
+
+            data_y.append(rainR) # appending real rain data
+            data_x.append(list(it.chain.from_iterable(x))) # appending inputs
+
+    return data_x, data_y
+
+# creating the whole dataset (inputs and target), not dividing into training and testing here
+def create_testing_data(grid_x, grid_y):
+    data_x = [] # inputs
+    data_y = [] # target
+    tr_count = 0
+    for i in index30: # working with 20 days
         for j in range(10): # 10 times in each day
             x = []
             for k in range(1, 25): # 24 models as input
@@ -84,8 +120,8 @@ def create_training_and_testing_data(grid_x, grid_y):
 # predicting target for the testing data
 # calculating mae and rmse of the new prediction
 def run_models(grid_y, grid_x):
-    X, Y = create_training_and_testing_data(grid_x, grid_y) # X and Y is the inputs and target
-    data = Table(X, Y) # creating a Orange table combining both X and Y
+    X_train, Y_train = create_training_data(grid_x, grid_y) # X and Y is the inputs and target
+    data = Table(X_train, Y_train) # creating a Orange table combining both X and Y
 
     # print(data.Y)
     # np.savetxt('data/' + str(grid_x) + '_' + str(grid_y) + '.csv', np.array(data), delimiter=',', fmt='%10.5f')
@@ -95,19 +131,40 @@ def run_models(grid_y, grid_x):
     feature_method = og.preprocess.score.UnivariateLinearRegression() # feature selection
     selector = og.preprocess.SelectBestFeatures(method=feature_method, k=50) # taking 50 features out of 216
     out_data2 = selector(data) # this is the new dataset with 50 features
+    np.savetxt('features/' + str(grid_x) + '_' + str(grid_y) + '.csv', out_data2, delimiter=',', fmt='%10.5f')
     # plot_input(out_data2.X, out_data2.Y)
     # print(out_data2.domain)
 
     pca = PCA(n_components=5) # PCA with 5 components
     model = pca(out_data2)
-    out_data = model(out_data2)
+    train = model(out_data2)
+    np.savetxt('pca/' + str(grid_x) + '_' + str(grid_y) + '.csv', train, delimiter=',', fmt='%10.5f')
     # print(out_data.domain)
 
     ############################################
     # dividing into training and testing dataset
-    test = og.data.Table(out_data.domain, random.sample(out_data, 60))
-    train = og.data.Table(out_data.domain, [d for d in out_data if d not in test])
+    # test = og.data.Table(out_data.domain, random.sample(out_data, 60))
+    # train = og.data.Table(out_data.domain, [d for d in out_data if d not in test])
     ############################################
+
+    X_test, Y_test = create_testing_data(grid_x, grid_y)  # X and Y is the inputs and target
+    data2 = Table(X_test, Y_test)  # creating a Orange table combining both X and Y
+
+    # print(data.Y)
+    # np.savetxt('data/' + str(grid_x) + '_' + str(grid_y) + '.csv', np.array(data), delimiter=',', fmt='%10.5f')
+    # print(out_data.domain)
+    # print(out_data.Y)
+
+    feature_method = og.preprocess.score.UnivariateLinearRegression()  # feature selection
+    selector = og.preprocess.SelectBestFeatures(method=feature_method, k=50)  # taking 50 features out of 216
+    out_data22 = selector(data2)  # this is the new dataset with 50 features
+    # plot_input(out_data2.X, out_data2.Y)
+    # print(out_data2.domain)
+
+    pca = PCA(n_components=5)  # PCA with 5 components
+    model = pca(out_data22)
+    test = model(out_data22)
+    # print(out_data.domain)
 
     # ML models
     lin = og.regression.linear.LinearRegressionLearner()
@@ -228,7 +285,7 @@ def best_rmse(minRMSE, grid_y, grid_x):
 
 
 # saving the model info into file
-check = open('ModelsInfo.csv', 'w')
+check = open('ModelsInfo25x25.csv', 'w')
 check.truncate()
 check.write(str('Y'))
 check.write(', ')
@@ -391,3 +448,30 @@ for grid_y in range(1, 45): # for every y
 
             print('MAE is better in', countMAE, '/', total, '=', per_mae, '% cases')
             print('RMSE is better in', countRMSE, '/', total, '=', per_rmse, '% cases')
+        else:
+            check.write(str(grid_y))
+            check.write(', ')
+            check.write(str(grid_x))
+            check.write(', ')
+            check.write(str(0))
+            check.write(', ')
+            check.write(str(0))
+            check.write(', ')
+            check.write(str(0))
+            check.write(', ')
+            check.write(str(0))
+            check.write(', ')
+            check.write(str(0))
+            check.write(', ')
+            check.write(str(0))
+            check.write(', ')
+            check.write(str(sum(0)))
+            check.write(', ')
+            check.write(str(sum(0)))
+            check.write(', ')
+            check.write(str(0))
+            check.write(', ')
+            check.write(str(0))
+            check.write(', ')
+            check.write(str(0))
+            check.write('\n')

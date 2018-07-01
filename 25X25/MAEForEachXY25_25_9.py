@@ -34,14 +34,14 @@ np.set_printoptions(formatter={'float': '{: 0.4f}'.format})
 np.seterr(divide='ignore', invalid='ignore')
 
 #creating csv file
-check = open('MAE.csv', 'w')
+check = open('MAE25x25.csv', 'w')
 check.truncate()
 # writing the headers
 check.write(str('Y'))
 check.write(', ')
 check.write(str('X'))
 check.write(', ')
-for i in range(1, len(models_error_rate_file)):
+for i in range(1, 25):
     check.write(str(models_error_rate_file[i]))
     check.write(', ')
 check.write('\n')
@@ -53,8 +53,8 @@ for y in range(46): # 46 y-coordinates
         check.write(', ')
         check.write(str(x))
         check.write(', ')
-        for i in range(1, len(models_error_rate_file)): # for every model
-            countArr = np.zeros(shape=(20, 10)) #count array
+        for i in range(1, 25): # for every model
+            countArr = np.zeros(shape=(6, 10)) #count array
             sum = 0
             count = 0
 
@@ -65,7 +65,7 @@ for y in range(46): # 46 y-coordinates
                 original_data.append(np.array(rain_models[d, :10, 0, y, x]))  # real data
                 rain100.append(np.array(rain_models[d, :10, i, y, x]))  # model data
 
-            a = abs(original_data - rain100) # taking the absolute value
+            a = abs(np.array(original_data) - np.array(rain100)) # taking the absolute value
             # print(len(a), len(a[0]))
             # print(a[2,3])
             # print(np.nanmin(a), np.nanmax(a))

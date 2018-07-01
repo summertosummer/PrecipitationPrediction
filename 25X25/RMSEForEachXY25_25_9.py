@@ -44,14 +44,14 @@ np.seterr(divide='ignore', invalid='ignore')
 
 
 #creating csv file
-check = open('RMSE.csv', 'w')
+check = open('RMSE25x25.csv', 'w')
 check.truncate()
 # writing the headers
 check.write(str('Y'))
 check.write(', ')
 check.write(str('X'))
 check.write(', ')
-for i in range(1, len(models_error_rate_file)):
+for i in range(1, 25):
     check.write(str(models_error_rate_file[i]))
     check.write(', ')
 check.write('\n')
@@ -63,8 +63,8 @@ for y in range(46): # 46 y-coordinates
         check.write(', ')
         check.write(str(x))
         check.write(', ')
-        for i in range(1, len(models_error_rate_file)): # for every model
-            countArr = np.zeros(shape=(20, 10)) #count array
+        for i in range(1, 25): # for every model
+            countArr = np.zeros(shape=(6, 10)) #count array
             sum = 0
             count = 0
 
@@ -79,7 +79,7 @@ for y in range(46): # 46 y-coordinates
             # print(sqrt(power(abs(original_data - rain100), 2)))
             # print(original_data)
             # print(rain100)
-            a = np.array(power((original_data - rain100), 2)) # square of the difference
+            a = np.array(power((np.array(original_data) - np.array(rain100)), 2)) # square of the difference
             # print(a[0, 0])
 
             # print(len(a), len(a[0]))
