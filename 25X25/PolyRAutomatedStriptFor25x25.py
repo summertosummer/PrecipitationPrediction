@@ -13,26 +13,47 @@ from Orange.projection import PCA
 # import matplotlib.pyplot as plt
 # import matplotlib as mpl
 from sklearn.neighbors import KNeighborsRegressor
-from sklearn.preprocessing import PolynomialFeatures
-from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import pandas as pd
 import os
+from sklearn import datasets, linear_model
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.linear_model import Ridge
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.pipeline import make_pipeline
 
-if not os.path.exists('models25_25_9'):
-    os.makedirs('models25_25_9')
-if not os.path.exists('test'):
-    os.makedirs('test')
-if not os.path.exists('pred'):
-    os.makedirs('pred')
-if not os.path.exists('mae'):
-    os.makedirs('mae')
-if not os.path.exists('rmse'):
-    os.makedirs('rmse')
+
+if not os.path.exists('p_models25_25_9'):
+    os.makedirs('p_models25_25_9')
+if not os.path.exists('p_test'):
+    os.makedirs('p_test')
+if not os.path.exists('p_pred'):
+    os.makedirs('p_pred')
+if not os.path.exists('p_mae'):
+    os.makedirs('p_mae')
+if not os.path.exists('p_rmse'):
+    os.makedirs('p_rmse')
+if not os.path.exists('p_features'):
+    os.makedirs('p_features')
+if not os.path.exists('p_pca'):
+    os.makedirs('p_pca')
+if not os.path.exists('p_coef'):
+    os.makedirs('p_coef')
 
 #access netcdf data file
-netcdf_entire_dataset = Dataset("summing_dataset.nc", "r")
+netcdf_entire_dataset = Dataset("F:/dataset/rain_data/summing_dataset.nc", "r")
 rain_models = netcdf_entire_dataset.variables['summing_models']
+
+with open('../random70.csv') as csvf:
+    ind70 = csv.reader(csvf)
+    indexi70 = list(ind70)
+    index70 = indexi70[0]
+
+with open('../random30.csv') as csvf:
+    ind30 = csv.reader(csvf)
+    indexi30 = list(ind30)
+    index30 = indexi30[0]
 
 #read MAE and RMSE files
 dfMAE = pd.read_csv('MAE.csv', header=None)
@@ -59,11 +80,33 @@ def plot_input(x, y):
 '''
 
 # creating the whole dataset (inputs and target), not dividing into training and testing here
-def create_training_and_testing_data(grid_x, grid_y):
+def create_training_data(grid_x, grid_y):
     data_x = [] # inputs
     data_y = [] # target
     tr_count = 0
-    for i in range(20): # working with 20 days
+    for i in index70: # working with 20 days
+        for j in range(10): # 10 times in each day
+            x = []
+            for k in range(1, 25): # 24 models as input
+                # print('model: ', k)
+                b = rain_models[i, j, k, grid_y - 1:grid_y + 2, grid_x - 1:grid_x + 2] #taking an area of 9X9 from every model
+                rain100 = np.array(b)
+                x.append(list(it.chain.from_iterable(rain100)))  # flatten the list
+
+            bt = rain_models[i, j, 0, grid_y, grid_x] #taking the real data as target, zero in the third dimention is for real data
+            rainR = bt
+
+            data_y.append(rainR) # appending real rain data
+            data_x.append(list(it.chain.from_iterable(x))) # appending inputs
+
+    return data_x, data_y
+
+# creating the whole dataset (inputs and target), not dividing into training and testing here
+def create_testing_data(grid_x, grid_y):
+    data_x = [] # inputs
+    data_y = [] # target
+    tr_count = 0
+    for i in index30: # working with 20 days
         for j in range(10): # 10 times in each day
             x = []
             for k in range(1, 25): # 24 models as input
@@ -86,8 +129,8 @@ def create_training_and_testing_data(grid_x, grid_y):
 # predicting target for the testing data
 # calculating mae and rmse of the new prediction
 def run_models(grid_y, grid_x):
-    X, Y = create_training_and_testing_data(grid_x, grid_y) # X and Y is the inputs and target
-    data = Table(X, Y) # creating a Orange table combining both X and Y
+    X_train, Y_train = create_training_data(grid_x, grid_y) # X and Y is the inputs and target
+    data = Table(X_train, Y_train) # creating a Orange table combining both X and Y
 
     # print(data.Y)
     # np.savetxt('data/' + str(grid_x) + '_' + str(grid_y) + '.csv', np.array(data), delimiter=',', fmt='%10.5f')
@@ -97,31 +140,44 @@ def run_models(grid_y, grid_x):
     feature_method = og.preprocess.score.UnivariateLinearRegression() # feature selection
     selector = og.preprocess.SelectBestFeatures(method=feature_method, k=50) # taking 50 features out of 216
     out_data2 = selector(data) # this is the new dataset with 50 features
+    np.savetxt('p_features/' + str(grid_x) + '_' + str(grid_y) + '.csv', out_data2, delimiter=',', fmt='%10.5f')
     # plot_input(out_data2.X, out_data2.Y)
     # print(out_data2.domain)
 
     pca = PCA(n_components=5) # PCA with 5 components
     model = pca(out_data2)
-    out_data = model(out_data2)
+    train = model(out_data2)
+    np.savetxt('p_pca/' + str(grid_x) + '_' + str(grid_y) + '.csv', train, delimiter=',', fmt='%10.5f')
     # print(out_data.domain)
 
     ############################################
     # dividing into training and testing dataset
-    test = og.data.Table(out_data.domain, random.sample(out_data, 60))
-    train = og.data.Table(out_data.domain, [d for d in out_data if d not in test])
+    # test = og.data.Table(out_data.domain, random.sample(out_data, 60))
+    # train = og.data.Table(out_data.domain, [d for d in out_data if d not in test])
     ############################################
 
-    # POLYNOMIAL REGRESSION WITH DEGREE TWO
-    # create a Linear Regressor
-    lin = LinearRegression()
-    # pass the order of your polynomial here
-    poly = PolynomialFeatures(2)
-    # convert to be used further to linear regression
-    X_transform = poly.fit_transform(train.X)
-    # fit this to Linear Regressor
-    lin.fit(X_transform, train.Y)
+    X_test, Y_test = create_testing_data(grid_x, grid_y)  # X and Y is the inputs and target
+    data2 = Table(X_test, Y_test)  # creating a Orange table combining both X and Y
+
+    # print(data.Y)
+    # np.savetxt('data/' + str(grid_x) + '_' + str(grid_y) + '.csv', np.array(data), delimiter=',', fmt='%10.5f')
+    # print(out_data.domain)
+    # print(out_data.Y)
+
+    feature_method2 = og.preprocess.score.UnivariateLinearRegression()  # feature selection
+    selector2 = og.preprocess.SelectBestFeatures(method=feature_method2, k=50)  # taking 50 features out of 216
+    out_data22 = selector2(data2)  # this is the new dataset with 50 features
+    # plot_input(out_data2.X, out_data2.Y)
+    # print(out_data2.domain)
+
+    pca2 = PCA(n_components=5)  # PCA with 5 components
+    model2 = pca2(out_data22)
+    test = model2(out_data22)
+    # print(out_data.domain)
 
     # ML models
+    lin = make_pipeline(PolynomialFeatures(2), Ridge(alpha=100))
+    # X_transform = poly.fit_transform(train.X)
     # lin = og.regression.linear.LinearRegressionLearner()
     # rf = og.regression.random_forest.RandomForestRegressionLearner()
     # nnr = og.regression.NNRegressionLearner()
@@ -131,10 +187,13 @@ def run_models(grid_y, grid_x):
     # fitting data into ML models
     # learners = [lin]#, rf, nnr, svm]
     # regressors = [learner(train) for learner in learners]
+    lin.fit(train.X, train.Y)
     # knn.fit(train.X, train.Y)
+    # print(lin.coef_)
+    # np.savetxt('p_coef/' + str(grid_x) + '_' + str(grid_y) + '.csv', lin.coef_, delimiter=',', fmt='%10.5f')
 
     #saving the new trained models
-    with open("models25_25_9/"+str(grid_x)+"_"+str(grid_y)+"_lin.pickle", "wb") as f:
+    with open("p_models25_25_9/"+str(grid_x)+"_"+str(grid_y)+"_lin.pickle", "wb") as f:
         pickle.dump(lin, f)
     # with open("models25_25_9/"+str(grid_x)+"_"+str(grid_y)+"_rf.pickle", "wb") as f:
     #     pickle.dump(rf, f)
@@ -147,8 +206,8 @@ def run_models(grid_y, grid_x):
 
     # predicting target for testing dataset
     # print((r(test)[0] for r in regressors))
-    X_test = poly.fit_transform(test.X)
-    linPredict = lin.predict(X_test)
+    # X_test = poly.fit_transform(test.X)
+    linPredict = lin.predict(test.X)
     # linPredict = regressors[0](test)
     # rfPredict = regressors[1](test)
     # nnrPredict = regressors[2](test)
@@ -242,7 +301,7 @@ def best_rmse(minRMSE, grid_y, grid_x):
 
 
 # saving the model info into file
-check = open('PolyModelsInfo25x25.csv', 'w')
+check = open('p_ModelsInfo25x25.csv', 'w')
 check.truncate()
 check.write(str('Y'))
 check.write(', ')
@@ -280,7 +339,7 @@ for grid_y in range(1, 45): # for every y
 
         flag = True
         for _ in range(1): # looping 15 times to find the best model
-            try:
+            # try:
                 mae, rmse, predictions, test = run_models(grid_y, grid_x)
                 minRMSE = np.amin(rmse) # minimum RMSE from the new models
                 # total += 1
@@ -288,9 +347,9 @@ for grid_y in range(1, 45): # for every y
                 if getFlag: # checking if it is the best one
                     print('found the best')
                     break
-            except:
-                flag = False
-                pass
+            # except:
+            #     flag = False
+            #     pass
 
         # print("Learner  RMSE  MAE  R2")
         # for i in range(len(learners)):
@@ -308,10 +367,10 @@ for grid_y in range(1, 45): # for every y
                 countRMSE += 1
 
             # saving mae, rmse, prediction and target data
-            np.savetxt('test/' + str(grid_x) + '_' + str(grid_y) + '.csv', test.Y, delimiter=',', fmt='%10.5f')
-            np.savetxt('pred/' + str(grid_x) + '_' + str(grid_y) + '.csv', predictions, delimiter=',', fmt='%10.5f')
-            np.savetxt('mae/' + str(grid_x) + '_' + str(grid_y) + '.csv', mae, delimiter=',', fmt='%10.5f')
-            np.savetxt('rmse/' + str(grid_x) + '_' + str(grid_y) + '.csv', rmse, delimiter=',', fmt='%10.5f')
+            np.savetxt('p_test/' + str(grid_x) + '_' + str(grid_y) + '.csv', test.Y, delimiter=',', fmt='%10.5f')
+            np.savetxt('p_pred/' + str(grid_x) + '_' + str(grid_y) + '.csv', predictions, delimiter=',', fmt='%10.5f')
+            np.savetxt('p_mae/' + str(grid_x) + '_' + str(grid_y) + '.csv', mae, delimiter=',', fmt='%10.5f')
+            np.savetxt('p_rmse/' + str(grid_x) + '_' + str(grid_y) + '.csv', rmse, delimiter=',', fmt='%10.5f')
 
             # predictions.tofile('pred/' + grid_x + '_' + grid_y + '.csv', sep=',', format='%10.5f')
             # mae.tofile('mae/' + grid_x + '_' + grid_y + '.csv', sep=',', format='%10.5f')
@@ -405,3 +464,30 @@ for grid_y in range(1, 45): # for every y
 
             print('MAE is better in', countMAE, '/', total, '=', per_mae, '% cases')
             print('RMSE is better in', countRMSE, '/', total, '=', per_rmse, '% cases')
+        else:
+            check.write(str(grid_y))
+            check.write(', ')
+            check.write(str(grid_x))
+            check.write(', ')
+            check.write(str(0))
+            check.write(', ')
+            check.write(str(0))
+            check.write(', ')
+            check.write(str(0))
+            check.write(', ')
+            check.write(str(0))
+            check.write(', ')
+            check.write(str(0))
+            check.write(', ')
+            check.write(str(0))
+            check.write(', ')
+            check.write(str(0))
+            check.write(', ')
+            check.write(str(0))
+            check.write(', ')
+            check.write(str(0))
+            check.write(', ')
+            check.write(str(0))
+            check.write(', ')
+            check.write(str(0))
+            check.write('\n')
