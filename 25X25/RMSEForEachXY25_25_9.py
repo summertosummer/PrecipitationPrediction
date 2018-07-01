@@ -34,6 +34,11 @@ days_error_rate_file = netcdf_entire_dataset.variables['days'][:]
 time_error_rate_file = netcdf_entire_dataset.variables['time'][:]
 models_error_rate_file = netcdf_entire_dataset.variables['models'][:]
 
+with open('random30.csv') as csvf:
+    ind30 = csv.reader(csvf)
+    indexi30 = list(ind30)
+    index30 = indexi30[0]
+
 np.set_printoptions(formatter={'float': '{: 0.4f}'.format})
 np.seterr(divide='ignore', invalid='ignore')
 
@@ -64,8 +69,11 @@ for y in range(46): # 46 y-coordinates
             count = 0
 
             print('Y:', y, 'X:', x, 'model:', i)
-            original_data = np.array(rain_models[:20, :10, 0, y, x]) # real data
-            rain100 = np.array(rain_models[:20, :10, i, y, x]) # model data
+            original_data = []
+            rain100 = []
+            for d in index30:
+                original_data.append(np.array(rain_models[d, :10, 0, y, x]))  # real data
+                rain100.append(np.array(rain_models[d, :10, i, y, x]))  # model data
             # rain100[rain100>30000] = np.nan
 
             # print(sqrt(power(abs(original_data - rain100), 2)))

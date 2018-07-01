@@ -25,7 +25,7 @@ netcdf_entire_dataset = Dataset("summing_dataset.nc", "r")
 rain_models = netcdf_entire_dataset.variables['summing_models']
 models_error_rate_file = netcdf_entire_dataset.variables['models'][:]
 
-with open('random70.csv') as csvf:
+with open('random30.csv') as csvf:
     ind30 = csv.reader(csvf)
     indexi30 = list(ind30)
     index30 = indexi30[0]
