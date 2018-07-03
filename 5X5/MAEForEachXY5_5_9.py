@@ -25,39 +25,47 @@ netcdf_entire_dataset = Dataset("summing_dataset5_5.nc", "r")
 rain_models = netcdf_entire_dataset.variables['summing_models']
 models_error_rate_file = netcdf_entire_dataset.variables['models'][:]
 
+with open('random30.csv') as csvf:
+    ind30 = csv.reader(csvf)
+    indexi30 = list(ind30)
+    index30 = indexi30[0]
+
 np.set_printoptions(formatter={'float': '{: 0.4f}'.format})
 np.seterr(divide='ignore', invalid='ignore')
 
 #creating csv file
-check = open('MAE5_5.csv', 'w')
+check = open('MAE5x5.csv', 'w')
 check.truncate()
 # writing the headers
 check.write(str('Y'))
 check.write(', ')
 check.write(str('X'))
 check.write(', ')
-for i in range(1, len(models_error_rate_file)):
+for i in range(1, 25):
     check.write(str(models_error_rate_file[i]))
     check.write(', ')
 check.write('\n')
 
-for y in range(231): # 46 y-coordinates
+for y in range(1, 230): # 46 y-coordinates
     # print('model:', i, 'day:', j)
-    for x in range(336): # 67 x-coordinates
+    for x in range(1, 335): # 67 x-coordinates
         check.write(str(y))
         check.write(', ')
         check.write(str(x))
         check.write(', ')
-        for i in range(1, len(models_error_rate_file)): # for every model
-            countArr = np.zeros(shape=(20, 10)) #count array
+        for i in range(1, 25): # for every model
+            countArr = np.zeros(shape=(6, 10)) #count array
             sum = 0
             count = 0
 
             print('Y:', y, 'X:', x, 'model:', i)
-            original_data = np.array(rain_models[:20, :10, 0, y, x]) # real data
-            rain100 = np.array(rain_models[:20, :10, i, y, x]) # model data
+            original_data = []
+            rain100 = []
+            for d in index30:
+                original_data.append(np.array(rain_models[d, :10, 0, y, x]))  # real data
+                rain100.append(np.array(rain_models[d, :10, i, y, x]))  # model data
 
-            a = abs(original_data - rain100) # taking the absolute value
+            a = abs(np.array(original_data) - np.array(rain100)) # taking the absolute value
             # print(len(a), len(a[0]))
             # print(a[2,3])
             # print(np.nanmin(a), np.nanmax(a))
