@@ -37,15 +37,15 @@ if not os.path.exists('coef'):
     os.makedirs('coef')
 
 #access netcdf data file
-netcdf_entire_dataset = Dataset("summing_dataset.nc", "r")
+netcdf_entire_dataset = Dataset("F:/dataset/rain_data/summing_dataset.nc", "r")
 rain_models = netcdf_entire_dataset.variables['summing_models']
 
-with open('random70.csv') as csvf:
+with open('../random70.csv') as csvf:
     ind70 = csv.reader(csvf)
     indexi70 = list(ind70)
     index70 = indexi70[0]
 
-with open('random30.csv') as csvf:
+with open('../random30.csv') as csvf:
     ind30 = csv.reader(csvf)
     indexi30 = list(ind30)
     index30 = indexi30[0]
@@ -127,10 +127,13 @@ def run_models(grid_y, grid_x):
     X_train, Y_train = create_training_data(grid_x, grid_y) # X and Y is the inputs and target
     data = Table(X_train, Y_train) # creating a Orange table combining both X and Y
 
+    # print(data.domain)
+
     # print(data.Y)
     # np.savetxt('data/' + str(grid_x) + '_' + str(grid_y) + '.csv', np.array(data), delimiter=',', fmt='%10.5f')
     # print(out_data.domain)
     # print(out_data.Y)
+    # print(data.domain)
 
     feature_method = og.preprocess.score.UnivariateLinearRegression() # feature selection
     selector = og.preprocess.SelectBestFeatures(method=feature_method, k=50) # taking 50 features out of 216
@@ -138,11 +141,19 @@ def run_models(grid_y, grid_x):
     np.savetxt('features/' + str(grid_x) + '_' + str(grid_y) + '.csv', out_data2, delimiter=',', fmt='%10.5f')
     # plot_input(out_data2.X, out_data2.Y)
     # print(out_data2.domain)
+    # print(out_data2)
 
     pca = PCA(n_components=5) # PCA with 5 components
     model = pca(out_data2)
     train = model(out_data2)
-    np.savetxt('pca/' + str(grid_x) + '_' + str(grid_y) + '.csv', train, delimiter=',', fmt='%10.5f')
+    # print(pca.domain)
+    # print(model.components_)
+    temp = []
+    temp.append(pca.domain)
+    for arr in model.components_:
+        temp.append(list(arr))
+    # temp.append(model.components_)
+    np.savetxt('pca/' + str(grid_x) + '_' + str(grid_y) + '.csv', np.array(temp), delimiter=',', fmt='%s')
     # print(out_data.domain)
 
     ############################################
@@ -185,7 +196,7 @@ def run_models(grid_y, grid_x):
     knn.fit(train.X, train.Y)
     # print(lin.coef_)
     np.savetxt('coef/' + str(grid_x) + '_' + str(grid_y) + '.csv', lin.coef_, delimiter=',', fmt='%10.5f')
-    np.savetxt('coef/' + str(grid_x) + '_' + str(grid_y) + '.csv', knn.coef_, delimiter=',', fmt='%10.5f')
+    # np.savetxt('coef/' + str(grid_x) + '_' + str(grid_y) + '.csv', knn.coef_, delimiter=',', fmt='%10.5f')
 
     #saving the new trained models
     with open("models25_25_9/"+str(grid_x)+"_"+str(grid_y)+"_lin.pickle", "wb") as f:
@@ -203,9 +214,9 @@ def run_models(grid_y, grid_x):
     # print((r(test)[0] for r in regressors))
     linPredict = lin.predict(test.X)
     # linPredict = regressors[0](test)
-    rfPredict = regressors[1](test)
-    nnrPredict = regressors[2](test)
-    svmPredict = regressors[3](test)
+    rfPredict = regressors[0](test)
+    nnrPredict = regressors[1](test)
+    svmPredict = regressors[2](test)
     knnPredict = knn.predict(test.X)
 
     # storing the predictions into array
@@ -295,7 +306,7 @@ def best_rmse(minRMSE, grid_y, grid_x):
 
 
 # saving the model info into file
-check = open('ModelsInfo25x25.csv', 'w')
+check = open('ModelsInfo25x25_v2.csv', 'w')
 check.truncate()
 check.write(str('Y'))
 check.write(', ')
@@ -327,13 +338,13 @@ check.write('\n')
 total = 0
 countMAE = 0
 countRMSE = 0
-for grid_y in range(1, 45): # for every y
-    for grid_x in range(1, 66): # for every x
+for grid_y in range(22, 45): # for every y
+    for grid_x in range(22, 66): # for every x
         print('=================PLACE:', grid_x, grid_y, '=====================')
 
         flag = True
         for _ in range(1): # looping 15 times to find the best model
-            try:
+            # try:
                 mae, rmse, predictions, test = run_models(grid_y, grid_x)
                 minRMSE = np.amin(rmse) # minimum RMSE from the new models
                 # total += 1
@@ -341,9 +352,9 @@ for grid_y in range(1, 45): # for every y
                 if getFlag: # checking if it is the best one
                     print('found the best')
                     break
-            except:
-                flag = False
-                pass
+            # except:
+            #     flag = False
+            #     pass
 
         # print("Learner  RMSE  MAE  R2")
         # for i in range(len(learners)):

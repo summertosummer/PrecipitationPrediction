@@ -11,10 +11,9 @@ from netCDF4 import Dataset
 # append_netcdf = Dataset("F:/dataset/new_mae.nc", "a")
 # Total_MAE = append_netcdf.variables['Total_MAE']
 
-# reading netcdf
-error_rate_file = "summing_mae.nc"
-netcdf_error_rate_file = Dataset(error_rate_file)
-models_error_rate_file = netcdf_error_rate_file.variables['models'][:]
+#reading netcdf
+# error_rate_file = "summing_mae.nc"
+# netcdf_error_rate_file = Dataset(error_rate_file)
 #
 # days_error_rate_file = netcdf_error_rate_file.variables['days'][:]
 # time_error_rate_file = netcdf_error_rate_file.variables['time'][:]
@@ -24,40 +23,49 @@ models_error_rate_file = netcdf_error_rate_file.variables['models'][:]
 #reading netcdf
 netcdf_entire_dataset = Dataset("summing_dataset15_15.nc", "r")
 rain_models = netcdf_entire_dataset.variables['summing_models']
+models_error_rate_file = netcdf_entire_dataset.variables['models'][:]
+
+with open('random30.csv') as csvf:
+    ind30 = csv.reader(csvf)
+    indexi30 = list(ind30)
+    index30 = indexi30[0]
 
 np.set_printoptions(formatter={'float': '{: 0.4f}'.format})
 np.seterr(divide='ignore', invalid='ignore')
 
 #creating csv file
-check = open('MAE15_15.csv', 'w')
+check = open('MAE15x15.csv', 'w')
 check.truncate()
 # writing the headers
 check.write(str('Y'))
 check.write(', ')
 check.write(str('X'))
 check.write(', ')
-for i in range(1, len(models_error_rate_file)):
+for i in range(1, 25):
     check.write(str(models_error_rate_file[i]))
     check.write(', ')
 check.write('\n')
 
-for y in range(77): # 46 y-coordinates
+for y in range(1, 76): # 46 y-coordinates
     # print('model:', i, 'day:', j)
-    for x in range(112): # 67 x-coordinates
+    for x in range(1, 111): # 67 x-coordinates
         check.write(str(y))
         check.write(', ')
         check.write(str(x))
         check.write(', ')
-        for i in range(1, len(models_error_rate_file)): # for every model
-            countArr = np.zeros(shape=(20, 10)) #count array
+        for i in range(1, 25): # for every model
+            countArr = np.zeros(shape=(6, 10)) #count array
             sum = 0
             count = 0
 
             print('Y:', y, 'X:', x, 'model:', i)
-            original_data = np.array(rain_models[:20, :10, 0, y, x]) # real data
-            rain100 = np.array(rain_models[:20, :10, i, y, x]) # model data
+            original_data = []
+            rain100 = []
+            for d in index30:
+                original_data.append(np.array(rain_models[d, :10, 0, y, x]))  # real data
+                rain100.append(np.array(rain_models[d, :10, i, y, x]))  # model data
 
-            a = abs(original_data - rain100) # taking the absolute value
+            a = abs(np.array(original_data) - np.array(rain100)) # taking the absolute value
             # print(len(a), len(a[0]))
             # print(a[2,3])
             # print(np.nanmin(a), np.nanmax(a))
@@ -77,7 +85,6 @@ for y in range(77): # 46 y-coordinates
                 # print(min,max)
 
                 a[a == np.nan] = 0
-                a[a == np.inf] = 0
                 sum = np.nansum(a) # summing all non-nan values
                 count= np.sum(countArr) # summing all counts
                 avg = sum / count # this is the MAE
