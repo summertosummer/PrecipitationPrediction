@@ -2,8 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a02a84d7-de6c-410f-815a-fe5222bb6666" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/5X5/MAEForEachXY5_5_9.py" afterPath="$PROJECT_DIR$/5X5/MAEForEachXY5_5_9.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/5X5/RMSEForEachXY5_5_9.py" afterPath="$PROJECT_DIR$/5X5/RMSEForEachXY5_5_9.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PCAAnalysis.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/22_22_knn.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/22_22_knn.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/22_22_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/22_22_lin.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/22_22_nnr.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/22_22_nnr.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/22_22_rf.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/22_22_rf.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/22_22_svm.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/22_22_svm.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/23_22_knn.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/23_22_knn.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/23_22_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/23_22_lin.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/23_22_nnr.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/23_22_nnr.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/23_22_rf.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/23_22_rf.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/23_22_svm.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/23_22_svm.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/24_22_knn.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/24_22_knn.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/24_22_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/24_22_lin.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/24_22_nnr.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/24_22_nnr.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/24_22_rf.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/24_22_rf.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/24_22_svm.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/24_22_svm.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/25_22_knn.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/25_22_knn.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/25_22_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/25_22_lin.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/25_22_nnr.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/25_22_nnr.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/25_22_rf.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/25_22_rf.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/25_22_svm.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/25_22_svm.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/mae/22_22.csv" afterPath="$PROJECT_DIR$/25X25/mae/22_22.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/mae/23_22.csv" afterPath="$PROJECT_DIR$/25X25/mae/23_22.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/mae/24_22.csv" afterPath="$PROJECT_DIR$/25X25/mae/24_22.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/mae/25_22.csv" afterPath="$PROJECT_DIR$/25X25/mae/25_22.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/pred/22_22.csv" afterPath="$PROJECT_DIR$/25X25/pred/22_22.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/pred/23_22.csv" afterPath="$PROJECT_DIR$/25X25/pred/23_22.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/pred/24_22.csv" afterPath="$PROJECT_DIR$/25X25/pred/24_22.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/pred/25_22.csv" afterPath="$PROJECT_DIR$/25X25/pred/25_22.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/rmse/22_22.csv" afterPath="$PROJECT_DIR$/25X25/rmse/22_22.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/rmse/23_22.csv" afterPath="$PROJECT_DIR$/25X25/rmse/23_22.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/rmse/24_22.csv" afterPath="$PROJECT_DIR$/25X25/rmse/24_22.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/rmse/25_22.csv" afterPath="$PROJECT_DIR$/25X25/rmse/25_22.csv" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +45,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/PrecipitationPrediction$MLsAutomatedScriptFor25x25.coverage" NAME="MLsAutomatedScriptFor25x25 Coverage Results" MODIFIED="1530576586234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/25X25" />
+    <SUITE FILE_PATH="coverage/PrecipitationPrediction$MLsAutomatedScriptFor25x25.coverage" NAME="MLsAutomatedScriptFor25x25 Coverage Results" MODIFIED="1530591456592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/25X25" />
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$LRAutomatedStriptFor25x25.coverage" NAME="LRAutomatedStriptFor25x25 Coverage Results" MODIFIED="1530410735600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/25X25" />
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$PlotIfYouCan.coverage" NAME="PlotIfYouCan Coverage Results" MODIFIED="1530563770668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$PolyRAutomatedStriptFor25x25.coverage" NAME="PolyRAutomatedStriptFor25x25 Coverage Results" MODIFIED="1530425671652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/25X25" />
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$CCLForAReason.coverage" NAME="CCLForAReason Coverage Results" MODIFIED="1530484713715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PrecipitationPrediction$PCAAnalysis.coverage" NAME="PCAAnalysis Coverage Results" MODIFIED="1530592430228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -25,41 +58,35 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MAEForEachXY15_15.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/15X15/MAEForEachXY15_15.py">
+      <file leaf-file-name="PCAAnalysis.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PCAAnalysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="439">
+              <caret line="195" column="0" lean-forward="true" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RMSEForEachXY15_15.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/15X15/RMSEForEachXY15_15.py">
+      <file leaf-file-name="MLsAutomatedScriptFor25x25.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/25X25/MLsAutomatedScriptFor25x25.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1512">
-              <caret line="60" column="25" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="459">
+              <caret line="374" column="12" lean-forward="false" selection-start-line="374" selection-start-column="12" selection-end-line="374" selection-end-column="111" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MAEForEachXY5_5_9.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/5X5/MAEForEachXY5_5_9.py">
+      <file leaf-file-name="PlotIfYouCan.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PlotIfYouCan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1053">
-              <caret line="50" column="25" lean-forward="false" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RMSEForEachXY5_5_9.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/5X5/RMSEForEachXY5_5_9.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="60" column="25" lean-forward="false" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+            <state relative-caret-position="592">
+              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -94,6 +121,7 @@
         <option value="$PROJECT_DIR$/15X15/RMSEForEachXY15_15.py" />
         <option value="$PROJECT_DIR$/5X5/MAEForEachXY5_5_9.py" />
         <option value="$PROJECT_DIR$/5X5/RMSEForEachXY5_5_9.py" />
+        <option value="$PROJECT_DIR$/PCAAnalysis.py" />
       </list>
     </option>
   </component>
@@ -161,6 +189,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="25X25" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PrecipitationPrediction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PrecipitationPrediction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="15X15" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -175,25 +217,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
-  <component name="RunManager" selected="Python.MLsAutomatedScriptFor25x25">
-    <configuration default="false" name="LRAutomatedStriptFor25x25" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/25X25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PrecipitationPrediction" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/25X25/LRAutomatedStriptFor25x25.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.PCAAnalysis">
     <configuration default="false" name="PlotIfYouCan" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -262,6 +286,24 @@
       <module name="PrecipitationPrediction" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/25X25/MLsAutomatedScriptFor25x25.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PCAAnalysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PrecipitationPrediction" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PCAAnalysis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -481,19 +523,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.LRAutomatedStriptFor25x25" />
-      <item index="1" class="java.lang.String" itemvalue="Python.PlotIfYouCan" />
-      <item index="2" class="java.lang.String" itemvalue="Python.PolyRAutomatedStriptFor25x25" />
-      <item index="3" class="java.lang.String" itemvalue="Python.CCLForAReason" />
-      <item index="4" class="java.lang.String" itemvalue="Python.MLsAutomatedScriptFor25x25" />
+      <item index="0" class="java.lang.String" itemvalue="Python.PlotIfYouCan" />
+      <item index="1" class="java.lang.String" itemvalue="Python.PolyRAutomatedStriptFor25x25" />
+      <item index="2" class="java.lang.String" itemvalue="Python.CCLForAReason" />
+      <item index="3" class="java.lang.String" itemvalue="Python.MLsAutomatedScriptFor25x25" />
+      <item index="4" class="java.lang.String" itemvalue="Python.PCAAnalysis" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.MLsAutomatedScriptFor25x25" />
-        <item index="1" class="java.lang.String" itemvalue="Python.PlotIfYouCan" />
-        <item index="2" class="java.lang.String" itemvalue="Python.CCLForAReason" />
-        <item index="3" class="java.lang.String" itemvalue="Python.PolyRAutomatedStriptFor25x25" />
-        <item index="4" class="java.lang.String" itemvalue="Python.LRAutomatedStriptFor25x25" />
+        <item index="0" class="java.lang.String" itemvalue="Python.PCAAnalysis" />
+        <item index="1" class="java.lang.String" itemvalue="Python.MLsAutomatedScriptFor25x25" />
+        <item index="2" class="java.lang.String" itemvalue="Python.PlotIfYouCan" />
+        <item index="3" class="java.lang.String" itemvalue="Python.CCLForAReason" />
+        <item index="4" class="java.lang.String" itemvalue="Python.PolyRAutomatedStriptFor25x25" />
       </list>
     </recent_temporary>
   </component>
@@ -520,7 +562,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6558659" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38435754" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -565,14 +607,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/25X25/LRAutomatedStriptFor25x25.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/25X25/PolyRAutomatedStriptFor25x25.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3402">
@@ -826,16 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlotIfYouCan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-305">
-          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#13#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/Orange/projection/pca.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -867,16 +891,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/25X25/MLsAutomatedScriptFor25x25.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="158" column="48" lean-forward="true" selection-start-line="158" selection-start-column="48" selection-end-line="158" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -930,18 +944,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/15X15/MAEForEachXY15_15.py">
+    <entry file="file://$PROJECT_DIR$/5X5/RMSEForEachXY5_5_9.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/15X15/RMSEForEachXY15_15.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="60" column="25" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="60" column="25" lean-forward="false" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -954,11 +960,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5X5/RMSEForEachXY5_5_9.py">
+    <entry file="file://$PROJECT_DIR$/15X15/RMSEForEachXY15_15.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="60" column="25" lean-forward="false" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
+        <state relative-caret-position="1512">
+          <caret line="60" column="25" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15X15/MAEForEachXY15_15.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlotIfYouCan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25X25/MLsAutomatedScriptFor25x25.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="374" column="12" lean-forward="false" selection-start-line="374" selection-start-column="12" selection-end-line="374" selection-end-column="111" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PCAAnalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="195" column="0" lean-forward="true" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
