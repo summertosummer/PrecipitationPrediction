@@ -22,7 +22,7 @@ from copy import deepcopy
 def data_visualization_2dr(w_data, title, i=0, visualize=True):
     if visualize:
         plt.axis([0, len(w_data[0]), 0, len(w_data)])
-        w_data[w_data >= 0] = 0
+        # w_data[w_data >= 0] = 0
         # w_data[w_data >= 100] = 0
         x, y = w_data.nonzero()
         # x = range(0, 65)
@@ -32,7 +32,7 @@ def data_visualization_2dr(w_data, title, i=0, visualize=True):
         plt.title(title)
         plt.colorbar()
         # plt.savefig('com/fig' + str(i) + '.png')
-        plt.clim(-5, 0)
+        # plt.clim(-5, 0)
         plt.show()
         plt.close()
 
@@ -134,16 +134,23 @@ def show_images2(images):
 
     plt.show()
 
+# #read MAE and RMSE files
+# readData = pd.read_csv('pca_analysis.csv', header=None)
+#
+# imagesArr = []
+# for i in range(24):
+#     temp = pd.to_numeric(np.array(readData[i])[:]).reshape((44, 65))
+#     imagesArr.append(temp)
+#
+# imagesArr = np.round(imagesArr/np.max(imagesArr), 1)
+#
+# show_images(imagesArr, 1)
+# # data_visualization_2dr(w_data=imagesArr[0], title='model')
+# # display_image(rmse)
+
+
 #read MAE and RMSE files
-readData = pd.read_csv('pca_analysis.csv', header=None)
-
-imagesArr = []
-for i in range(24):
-    temp = pd.to_numeric(np.array(readData[i])[:]).reshape((44, 65))
-    imagesArr.append(temp)
-
-imagesArr = np.round(imagesArr/np.max(imagesArr), 1)
-
-show_images(imagesArr, 1)
-# data_visualization_2dr(w_data=imagesArr[0], title='model')
+readData = pd.read_csv('pca_diff.csv', header=None)
+temp = pd.to_numeric(np.array(readData[4])[:]).reshape((44, 65))
+data_visualization_2dr(temp, title='PCA5')
 # display_image(rmse)

@@ -194,12 +194,54 @@ def create_array(grid_y, grid_x):
 
     return temp
 
+def create_new_array(grid_y, grid_x):
+    readData = pd.read_csv('pca2/' + str(grid_x) + '_' + str(grid_y) + '.csv', header=None)
+    arr = np.array(readData[:][:])
+    arr = arr.astype(str)
+    arr = np.char.replace(arr, " ", "")
+    arr = np.char.replace(arr, "[", "")
+    arr = np.char.replace(arr, "]", "")
+    arr = np.char.replace(arr, "|Target", "")
+    # print(arr[0][:])
+    arr1 = arr[1][:]
+    arr2 = arr[2][:]
+    arr3 = arr[3][:]
+    arr4 = arr[4][:]
+    arr5 = arr[5][:]
+
+    arr1=arr1.astype(np.float)
+    arr2=arr2.astype(np.float)
+    arr3=arr3.astype(np.float)
+    arr4=arr4.astype(np.float)
+    arr5=arr5.astype(np.float)
+
+    temp = []
+    temp.append(np.amax(arr1) - np.average(arr1))
+    temp.append(np.amax(arr2) - np.average(arr2))
+    temp.append(np.amax(arr3) - np.average(arr3))
+    temp.append(np.amax(arr4) - np.average(arr4))
+    temp.append(np.amax(arr5) - np.average(arr5))
+
+    # print(temp)
+
+    return temp
+
 finalArr = []
-for grid_y in range(1, 45): # for every y
-    for grid_x in range(1, 66): # for every x
+for grid_y in range(1, 45):  # for every y
+    for grid_x in range(1, 66):  # for every x
         print('=================PLACE:', grid_x, grid_y, '=====================')
-        run_models(grid_y, grid_x)
-        arr = create_array(grid_y, grid_x)
+        # run_models(grid_y, grid_x)
+        arr = create_new_array(grid_y, grid_x)
         finalArr.append(arr)
 
-np.savetxt('pca_analysis.csv', finalArr, delimiter=',', fmt='%10.5f')
+np.savetxt('pca_diff.csv', finalArr, delimiter=',', fmt='%10.5f')
+
+# finalArr = []
+# for grid_y in range(1, 45): # for every y
+#     for grid_x in range(1, 66): # for every x
+#         print('=================PLACE:', grid_x, grid_y, '=====================')
+#         run_models(grid_y, grid_x)
+#         arr = create_array(grid_y, grid_x)
+#         finalArr.append(arr)
+#
+# np.savetxt('pca_analysis.csv', finalArr, delimiter=',', fmt='%10.5f')
