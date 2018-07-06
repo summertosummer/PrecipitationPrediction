@@ -23,8 +23,8 @@ netcdf_entire_dataset = Dataset("F:/dataset/rain_data/summing_dataset.nc", "r")
 rain_models = netcdf_entire_dataset.variables['summing_models']
 
 #read MAE and RMSE files
-readData = pd.read_csv('new_results/MAE25x25_calculations_modified.csv', header=None)
-temp = pd.to_numeric(np.array(readData[33])[1:])
+readData = pd.read_csv('new_results/ModelsInfo25x25_modified.csv', header=None)
+temp = np.array(readData[3])[1:]
 print(temp)
 
 def data_visualization_2dr(w_data, title, i=0, visualize=True):
@@ -44,23 +44,23 @@ def data_visualization_2dr(w_data, title, i=0, visualize=True):
         plt.show()
         plt.close()
 #
-# f_array = []
-# f_index = 0
-# for grid_y in range(1, 45): # for every y
-#     for grid_x in range(1, 66): # for every x
-#         print('=================PLACE:', grid_x, grid_y, '=====================')
-#         tempCheck = rain_models[:20, :10, 0, grid_y, grid_x]
-#         if not tempCheck.any():
-#             f_array.append(0)
-#         else:
-#             f_array.append(temp[f_index])
-#             f_index += 1
-#
-# np.savetxt('new_results/reshaping25x25mae.csv', f_array, delimiter=',', fmt='%10.5f')
-# print(np.array(f_array).reshape((44, 65)))
+f_array = []
+f_index = 0
+for grid_y in range(1, 45): # for every y
+    for grid_x in range(1, 66): # for every x
+        print('=================PLACE:', grid_x, grid_y, '=====================')
+        tempCheck = rain_models[:20, :10, 0, grid_y, grid_x]
+        if not tempCheck.any():
+            f_array.append(0)
+        else:
+            f_array.append(temp[f_index])
+            f_index += 1
 
-#read MAE and RMSE files
-readData = pd.read_csv('new_results/reshaping25x25mae.csv', header=None)
-temp = pd.to_numeric(np.array(readData[0])[:]).reshape((44, 65))
-data_visualization_2dr(temp, title='MAE')
+np.savetxt('new_results/reshapingIfLR.csv', f_array, delimiter=',', fmt='%s')
+print(np.array(f_array).reshape((44, 65)))
+
+# #read MAE and RMSE files
+# readData = pd.read_csv('new_results/reshaping25x25mae.csv', header=None)
+# temp = pd.to_numeric(np.array(readData[0])[:]).reshape((44, 65))
+# data_visualization_2dr(temp, title='MAE')
 
