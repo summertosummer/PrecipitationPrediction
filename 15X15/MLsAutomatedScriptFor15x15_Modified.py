@@ -94,6 +94,24 @@ def create_training_data(grid_x, grid_y):
             data_y.append(rainR) # appending real rain data
             data_x.append(list(it.chain.from_iterable(x))) # appending inputs
 
+    data_x = np.array(data_x)
+    data_y = np.array(data_y)
+
+    data_x[data_x == np.inf] = np.nan
+    data_y[data_y == np.inf] = np.nan
+
+    col_mean = np.nanmean(data_x, axis=0)
+    # Find indicies that you need to replace
+    inds = np.where(np.isnan(data_x))
+    # Place column means in the indices. Align the arrays using take
+    data_x[inds] = np.take(col_mean, inds[1])
+
+    col_mean2 = np.nanmean(data_y, axis=0)
+    # Find indicies that you need to replace
+    inds2 = np.where(np.isnan(data_y))
+    # Place column means in the indices. Align the arrays using take
+    data_y[inds2] = np.take(col_mean2, inds2[0])
+
     return data_x, data_y
 
 # creating the whole dataset (inputs and target), not dividing into training and testing here
@@ -115,6 +133,24 @@ def create_testing_data(grid_x, grid_y):
 
             data_y.append(rainR) # appending real rain data
             data_x.append(list(it.chain.from_iterable(x))) # appending inputs
+
+    data_x = np.array(data_x)
+    data_y = np.array(data_y)
+
+    data_x[data_x == np.inf] = np.nan
+    data_y[data_y == np.inf] = np.nan
+
+    col_mean = np.nanmean(data_x, axis=0)
+    # Find indicies that you need to replace
+    inds = np.where(np.isnan(data_x))
+    # Place column means in the indices. Align the arrays using take
+    data_x[inds] = np.take(col_mean, inds[1])
+
+    col_mean2 = np.nanmean(data_y, axis=0)
+    # Find indicies that you need to replace
+    inds2 = np.where(np.isnan(data_y))
+    # Place column means in the indices. Align the arrays using take
+    data_y[inds2] = np.take(col_mean2, inds2[0])
 
     return data_x, data_y
 
