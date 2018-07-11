@@ -31,7 +31,7 @@ netcdf_entire_dataset = Dataset("F:/dataset/rain_data/summing_dataset.nc", "r")
 rain_models = netcdf_entire_dataset.variables['summing_models']
 
 # read MAE and RMSE files
-readDataMAE = pd.read_csv('new_results/MAE25x25_calculations_modified.csv', header=None)
+readDataMAE = pd.read_csv('new_results/RMSE25x25_calculations_modified.csv', header=None)
 tempMAE = pd.to_numeric(np.array(readDataMAE[33])[1:])
 WAItself = pd.to_numeric(np.array(readDataMAE[29])[1:])
 BestNew = pd.to_numeric(np.array(readDataMAE[31])[1:])
@@ -488,28 +488,31 @@ def create_array(grid_y, grid_x, f_ind):
 
     return temp
 
-# f_array = []
-# f_index = 0
-# for grid_y in range(1, 45): # for every y
-#     for grid_x in range(1, 66): # for every x
-#         print('=================PLACE:', grid_x, grid_y, '=====================')
-#         tempCheck = rain_models[:20, :10, 0, grid_y, grid_x]
-#         if not tempCheck.any():
-#             f_array.append([0]*24)
-#         else:
-#             getArr = create_array(grid_y, grid_x, f_index)
-#             f_array.append(getArr)
-#             f_index += 1
-#             # print(f_array)
-# np.savetxt('complicated_2v3.csv', f_array, delimiter=',', fmt='%s')
+f_array = []
+f_index = 0
+for grid_y in range(1, 45): # for every y
+    for grid_x in range(1, 66): # for every x
+        print('=================PLACE:', grid_x, grid_y, '=====================')
+        tempCheck = rain_models[:20, :10, 0, grid_y, grid_x]
+        if not tempCheck.any():
+            f_array.append([0]*24)
+        else:
+            getArr = create_array(grid_y, grid_x, f_index)
+            f_array.append(getArr)
+            f_index += 1
+            # print(f_array)
+np.savetxt('complicated_2vlatest.csv', f_array, delimiter=',', fmt='%s')
 
 
-def show_images(images, cols, titles=None):
-    assert ((titles is None) or (len(images) == len(titles)))
+def show_images(images, cols, titles):
+    min_v = np.nanmin(images)
+    max_v = np.nanmax(images[images != np.inf])
+    print(min_v, max_v)
+    # assert ((titles is None) or (len(images) == len(titles)))
     n_images = len(images)
     if titles is None: titles = ['Image (%d)' % i for i in range(1, n_images + 1)]
     fig = plt.figure(num=None, figsize=(16, 12), dpi=100, facecolor='w', edgecolor='k')
-    # fig.suptitle('Plotting Precipitation Values. Day: 2016/05/20')
+    fig.suptitle(titles)
     for n, (image, title) in enumerate(zip(images, titles)):
         # a = fig.add_subplot(cols, np.ceil(n_images / float(cols)), n + 1)
         a = fig.add_subplot(6, 4, n + 1)
@@ -520,24 +523,24 @@ def show_images(images, cols, titles=None):
         c = image[x, y]
 
         im = plt.scatter(y[:], x[:], c=c[:], cmap='jet', s=1)
-        # if n == 10:
-        #     plt.ylabel('Vertical Grid')
-        # if n == 22:
-        #     plt.xlabel('Horizontal Grid')
-        # plt.colorbar()
-    # plt.show()
+        if n == 8:
+            plt.ylabel('Vertical Grid')
+        if n == 21:
+            plt.xlabel('Horizontal Grid')
+        plt.clim(min_v, max_v)
     cbar_ax = fig.add_axes([0.92, 0.15, 0.01, 0.7])
     fig.colorbar(im, cax=cbar_ax)
-    plt.savefig('complicated_2v7.png')
+    # plt.show()
+    plt.savefig('involvement_of_each_model.png')
 
 #read MAE and RMSE files
-readData = pd.read_csv('complicated_2v2.csv', header=None)
+readData = pd.read_csv('complicated_2vlatest.csv', header=None)
 imagesArr = []
 for i in range(24):
     temp = pd.to_numeric(np.array(readData[i])[:]).reshape((44, 65))
-    temp[temp<0] = 0
-    temp[temp>50] = 50
+    temp[temp<=0] = 0
+    temp[temp > 0] = 1
     imagesArr.append(temp)
 
 # imagesArr = np.round(imagesArr/np.max(imagesArr), 1)
-show_images(imagesArr, 1)
+show_images(imagesArr, 1, titles="Involvement of each model in the input feature and performance of new model")

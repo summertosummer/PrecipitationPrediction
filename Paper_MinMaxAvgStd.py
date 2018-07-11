@@ -91,5 +91,7 @@ def data_visualization_2dr(w_data, title, i=0, visualize=True):
         plt.close()
 
 readData = pd.read_csv('minMaxAvgStd.csv', header=None)
-temp = pd.to_numeric(np.array(readData[3])[:]).reshape((46, 67))
-data_visualization_2dr(w_data=temp, title='Standard Deviation of Precipitation For each grid point')
+temp1 = pd.to_numeric(np.array(readData[3])[:]).reshape((46, 67))
+temp2 = pd.to_numeric(np.array(readData[2])[:]).reshape((46, 67))
+temp = temp1 / temp2
+data_visualization_2dr(w_data=temp, title='Standard Deviation of Precipitation For each grid point divided by average rainfall')
