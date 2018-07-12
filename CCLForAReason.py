@@ -231,3 +231,115 @@ output(rmse)
 # firstPass(inp2)
 # secondPass(inp2)
 # singleOutput(2, rmse)
+
+
+
+
+# import numpy as np
+# from netCDF4 import Dataset
+# from collections import defaultdict
+# import matplotlib.pyplot as plt
+#
+# def connectedComponents(inputImg):
+#     newLabel = 1
+#     flag = False
+#     global labeling
+#     labeling = np.zeros(shape=(len(inputImg), len(inputImg[0])))
+#
+#     # first pass
+#     for i in range(len(inputImg)):
+#         for j in range(len(inputImg[0])):
+#             minLabel = newLabel
+#
+#             if j - 1 >= 0 and inputImg[i][j] == inputImg[i][j - 1]:
+#                 if minLabel > labeling[i][j - 1] and labeling[i][j - 1] != 0:
+#                     minLabel = labeling[i][j - 1]
+#                     flag = True
+#
+#             if i - 1 >= 0 and inputImg[i][ j] == inputImg[i - 1][ j]:
+#                 if minLabel > labeling[i - 1][j] and labeling[i - 1][j] != 0:
+#                     minLabel = labeling[i - 1][j]
+#                     flag = True
+#
+#             if i - 1 >= 0 and j - 1 >= 0 and inputImg[i][j] == inputImg[i - 1][ j - 1]:
+#                 if minLabel > labeling[i - 1][j - 1] and labeling[i - 1][j - 1] != 0:
+#                     minLabel = labeling[i - 1][j - 1]
+#                     flag = True
+#
+#             if i - 1 >= 0 and j + 1 < len(inputImg[0]) and inputImg[i][j] == inputImg[i - 1][ j + 1]:
+#                 if minLabel > labeling[i - 1][j + 1] and labeling[i - 1][j + 1] != 0:
+#                     minLabel = labeling[i - 1][j + 1]
+#                     flag = True
+#
+#             if flag == False: newLabel += 1
+#
+#             flag = False
+#             labeling[i, j] = minLabel
+#
+#     print(labeling)
+#
+#     # second pass
+#     for i in range(len(inputImg)):
+#         for j in range(len(inputImg[0])):
+#             minLabel = labeling[i, j]
+#             if j - 1 >= 0 and inputImg[i][j] == inputImg[i][j - 1]:
+#                 if minLabel > labeling[i][j - 1]:
+#                     minLabel = labeling[i][j - 1]
+#
+#             if i - 1 >= 0 and inputImg[i][j] == inputImg[i - 1][ j]:
+#                 if minLabel > labeling[i - 1][j]:
+#                     minLabel = labeling[i - 1][j]
+#
+#             if i - 1 >= 0 and j - 1 >= 0 and inputImg[i][j] == inputImg[i - 1][j - 1]:
+#                 if minLabel > labeling[i - 1][j - 1]:
+#                     minLabel = labeling[i - 1][j - 1]
+#
+#             if i - 1 >= 0 and j + 1 < len(inputImg[0]) and inputImg[i][j] == inputImg[i - 1][j + 1]:
+#                 if minLabel > labeling[i - 1][j + 1]:
+#                     minLabel = labeling[i - 1][j + 1]
+#
+#             if j + 1 < len(inputImg[0]) and inputImg[i][j] == inputImg[i][j + 1]:
+#                 if minLabel > labeling[i][j + 1]:
+#                     minLabel = labeling[i][j + 1]
+#
+#             if i + 1 < len(inputImg) and j + 1 < len(inputImg[0]) and inputImg[i][j] == inputImg[i + 1][j + 1]:
+#                 if minLabel > labeling[i + 1][j + 1]:
+#                     minLabel = labeling[i + 1][j + 1]
+#
+#             if i + 1 < len(inputImg) and inputImg[i][j] == inputImg[i + 1][j]:
+#                 if minLabel > labeling[i + 1][j]:
+#                     minLabel = labeling[i + 1][j]
+#
+#             if i + 1 < len(inputImg) and j - 1 >=0 and inputImg[i][j] == inputImg[i + 1][j - 1]:
+#                 if minLabel > labeling[i + 1][j - 1]:
+#                     minLabel = labeling[i + 1][j - 1]
+#
+#             labeling[i][j] = minLabel
+#
+#     return labeling
+#
+#
+#
+#
+# if __name__ == "__main__":
+#     input1 = [[255, 0, 55, 0],
+#              [15, 0, 15, 0],
+#              [255, 0, 255, 0],
+#              [21, 0, 22, 0],
+#              [255, 25, 255, 0],
+#              [0, 0, 0, 0],
+#              [110, 23, 255, 0],
+#              [0, 0, 0, 0],
+#              [321, 0, 99, 0]]
+#
+#     print(connectedComponents(input1))
+#
+#     # input = [[255, 0, 0, 0],
+#     #          [255, 0, 255, 0],
+#     #          [255, 0, 255, 0],
+#     #          [255, 0, 255, 0],
+#     #          [255, 255, 255, 0],
+#     #          [0, 0, 0, 0],
+#     #          [0, 255, 255, 0],
+#     #          [0, 255, 255, 0],
+#     #          [255, 0, 0, 0]]
