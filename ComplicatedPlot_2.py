@@ -488,20 +488,20 @@ def create_array(grid_y, grid_x, f_ind):
 
     return temp
 
-f_array = []
-f_index = 0
-for grid_y in range(1, 45): # for every y
-    for grid_x in range(1, 66): # for every x
-        print('=================PLACE:', grid_x, grid_y, '=====================')
-        tempCheck = rain_models[:20, :10, 0, grid_y, grid_x]
-        if not tempCheck.any():
-            f_array.append([0]*24)
-        else:
-            getArr = create_array(grid_y, grid_x, f_index)
-            f_array.append(getArr)
-            f_index += 1
-            # print(f_array)
-np.savetxt('complicated_2vlatest.csv', f_array, delimiter=',', fmt='%s')
+# f_array = []
+# f_index = 0
+# for grid_y in range(1, 45): # for every y
+#     for grid_x in range(1, 66): # for every x
+#         print('=================PLACE:', grid_x, grid_y, '=====================')
+#         tempCheck = rain_models[:20, :10, 0, grid_y, grid_x]
+#         if not tempCheck.any():
+#             f_array.append([0]*24)
+#         else:
+#             getArr = create_array(grid_y, grid_x, f_index)
+#             f_array.append(getArr)
+#             f_index += 1
+#             # print(f_array)
+# np.savetxt('complicated_2vlatest.csv', f_array, delimiter=',', fmt='%s')
 
 
 def show_images(images, cols, titles):
@@ -531,10 +531,10 @@ def show_images(images, cols, titles):
     cbar_ax = fig.add_axes([0.92, 0.15, 0.01, 0.7])
     fig.colorbar(im, cax=cbar_ax)
     # plt.show()
-    plt.savefig('involvement_of_each_model.png')
+    plt.savefig('involvement_of_each_model_new.png')
 
 #read MAE and RMSE files
-readData = pd.read_csv('complicated_2vlatest.csv', header=None)
+readData = pd.read_csv('complicated_2v2.csv', header=None)
 imagesArr = []
 for i in range(24):
     temp = pd.to_numeric(np.array(readData[i])[:]).reshape((44, 65))

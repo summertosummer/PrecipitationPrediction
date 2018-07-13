@@ -4,6 +4,7 @@ from collections import defaultdict
 import matplotlib.pyplot as plt
 
 Threshold = 2
+Background = 5
 
 def firstPass(inputImg):
     global labeling
@@ -94,7 +95,29 @@ def isExist(x, i0):
 def same_component_check(point1, point2):
     return abs(point1 - point2) <= Threshold
 
-def output(inputImg):
+#2D Visualizaiton
+def data_visualization_2dr(w_data, title, i=0, visualize=True):
+    if visualize:
+        w_data[w_data == ' '] = np.nan # making all the NONE value NAN
+        plt.axis([0, len(w_data[0]), 0, len(w_data)])
+        # w_data[w_data >= 0] = 0
+        # w_data[w_data >= 100] = 0
+        x, y = w_data.nonzero()
+        # x = range(0, 65)
+        # y = range(0, 44)
+        c = w_data[x, y]
+        plt.scatter(y[:], x[:], c=c[:], cmap='jet')
+        plt.title(title)
+        plt.colorbar()
+        plt.gca().invert_yaxis()
+        # plt.savefig('com/fig' + str(i) + '.png')
+        # plt.clim(-5, 0)
+        plt.show()
+        plt.close()
+
+def output1(inputImg):
+    finalArr1 = np.empty(shape=(len(inputImg), len(inputImg[0])), dtype='object')
+    finalArr1[:] = ' '
     for value in range(1, newLabel):
         flag = False
         print('--------------------',value)
@@ -105,8 +128,38 @@ def output(inputImg):
                 if (labeling[j][i] == value):
                     flag = True
                     arr[j][i] = str(inputImg[j][i])
-        if flag: print(arr)
-        # data_visualization_2d(np.array(arr), 'Real Data', visualize=True)
+
+        if flag and (arr != ' ').sum() > Background:
+            print(arr)
+            for j in range(len(labeling)):
+                for i in range(len(labeling[0])):
+                    if (labeling[j][i] == value):
+                        finalArr1[j][i] = str(arr[j][i])
+
+    data_visualization_2dr(np.array(finalArr1), 'Connected Components', visualize=True)
+
+def output2(inputImg):
+    finalArr1 = np.empty(shape=(len(inputImg), len(inputImg[0])), dtype='object')
+    finalArr1[:] = ' '
+    for value in range(1, newLabel):
+        flag = False
+        print('--------------------',value)
+        arr = np.empty(shape=(len(inputImg), len(inputImg[0])), dtype='object')
+        arr[:] = ' '
+        for j in range(len(labeling)):
+            for i in range(len(labeling[0])):
+                if (labeling[j][i] == value):
+                    flag = True
+                    arr[j][i] = str(value)
+
+        if flag and (arr != ' ').sum() > Background:
+            print(arr)
+            for j in range(len(labeling)):
+                for i in range(len(labeling[0])):
+                    if (labeling[j][i] == value):
+                        finalArr1[j][i] = str(arr[j][i])
+
+    data_visualization_2dr(np.array(finalArr1), 'Connected Components', visualize=True)
 
 if __name__ == "__main__":
     input1 = [[255, 257, 55, 0],
@@ -123,4 +176,32 @@ if __name__ == "__main__":
     secondPass(input1)
     print(labeling)
 
-    output(input1)
+    output1(input1)
+    output2(input1)
+
+
+
+# def output(inputImg):
+#     finalArr1 = np.empty(shape=(len(inputImg), len(inputImg[0])), dtype='object')
+#     finalArr1[:] = ' '
+#     for value in range(1, newLabel):
+#         flag = False
+#         print('--------------------',value)
+#         arr = np.empty(shape=(len(inputImg), len(inputImg[0])), dtype='object')
+#         arr[:] = ' '
+#         for j in range(len(labeling)):
+#             for i in range(len(labeling[0])):
+#                 if (labeling[j][i] == value):
+#                     flag = True
+#                     arr[j][i] = str(inputImg[j][i])
+#         if flag and (arr != ' ').sum() > Background:
+#             print(arr)
+#             finalArr1[finalArr1 == ' '] = np.nan
+#             arr[arr == ' '] = np.nan
+#             # np.array(list(map(int, finalArr1))), np.array(list(map(int, arr)))
+#             finalArr1 = np.nansum(np.dstack((finalArr1.astype(np.float), arr.astype(np.float))), 2)
+#             finalArr1 = finalArr1.astype(np.object)
+#             print(finalArr1)
+#             finalArr1[finalArr1 == np.nan] = ' '
+#
+#     data_visualization_2dr(np.array(finalArr1), 'Connected Components', visualize=True)

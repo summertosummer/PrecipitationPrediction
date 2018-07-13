@@ -2,13 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a02a84d7-de6c-410f-815a-fe5222bb6666" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CCL.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CreatingArrays.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ReadArrays.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new_results/RMSE25x25_calculations_modified.xlsx" afterPath="$PROJECT_DIR$/new_results/RMSE25x25_calculations_modified.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PlottingArrays.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/27_1_knn.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/27_1_knn.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/27_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/27_1_lin.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/27_1_nnr.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/27_1_nnr.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/27_1_poly.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/27_1_poly.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/27_1_rf.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/27_1_rf.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/27_1_svm.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/27_1_svm.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/28_1_knn.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/28_1_knn.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/28_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/28_1_lin.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/28_1_nnr.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/28_1_nnr.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/28_1_poly.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/28_1_poly.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/28_1_rf.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/28_1_rf.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/28_1_svm.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/28_1_svm.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/29_1_knn.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/29_1_knn.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/29_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/29_1_lin.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/29_1_nnr.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/29_1_nnr.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/29_1_poly.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/29_1_poly.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/29_1_rf.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/29_1_rf.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/29_1_svm.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/29_1_svm.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/30_1_knn.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/30_1_knn.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/30_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/30_1_lin.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/30_1_nnr.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/30_1_nnr.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/30_1_poly.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/30_1_poly.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/30_1_rf.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/30_1_rf.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/30_1_svm.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/30_1_svm.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/31_1_knn.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/31_1_knn.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/31_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/31_1_lin.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/31_1_nnr.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/31_1_nnr.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/31_1_poly.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/31_1_poly.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/31_1_rf.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/31_1_rf.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/31_1_svm.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/31_1_svm.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/32_1_knn.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/32_1_knn.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/32_1_lin.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/32_1_lin.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/32_1_nnr.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/32_1_nnr.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/32_1_poly.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/32_1_poly.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/32_1_rf.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/32_1_rf.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/models25_25_9/32_1_svm.pickle" afterPath="$PROJECT_DIR$/25X25/models25_25_9/32_1_svm.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/involvement_of_each_model.png" afterPath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/involvement_of_each_model.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CCLForAReason.py" afterPath="$PROJECT_DIR$/CCLForAReason.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new_results/RMSE25x25_calculations_modified.csv" afterPath="$PROJECT_DIR$/new_results/RMSE25x25_calculations_modified.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/MLsAutomatedScriptFor25x25_Modified.py" afterPath="$PROJECT_DIR$/25X25/MLsAutomatedScriptFor25x25_Modified.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/mae/27_1.csv" afterPath="$PROJECT_DIR$/25X25/mae/27_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/mae/28_1.csv" afterPath="$PROJECT_DIR$/25X25/mae/28_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/mae/29_1.csv" afterPath="$PROJECT_DIR$/25X25/mae/29_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/mae/30_1.csv" afterPath="$PROJECT_DIR$/25X25/mae/30_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/mae/31_1.csv" afterPath="$PROJECT_DIR$/25X25/mae/31_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/mae/32_1.csv" afterPath="$PROJECT_DIR$/25X25/mae/32_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/pred/27_1.csv" afterPath="$PROJECT_DIR$/25X25/pred/27_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/pred/28_1.csv" afterPath="$PROJECT_DIR$/25X25/pred/28_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/pred/29_1.csv" afterPath="$PROJECT_DIR$/25X25/pred/29_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/pred/30_1.csv" afterPath="$PROJECT_DIR$/25X25/pred/30_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/pred/31_1.csv" afterPath="$PROJECT_DIR$/25X25/pred/31_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/pred/32_1.csv" afterPath="$PROJECT_DIR$/25X25/pred/32_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/rmse/27_1.csv" afterPath="$PROJECT_DIR$/25X25/rmse/27_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/rmse/28_1.csv" afterPath="$PROJECT_DIR$/25X25/rmse/28_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/rmse/29_1.csv" afterPath="$PROJECT_DIR$/25X25/rmse/29_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/rmse/30_1.csv" afterPath="$PROJECT_DIR$/25X25/rmse/30_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/rmse/31_1.csv" afterPath="$PROJECT_DIR$/25X25/rmse/31_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/25X25/rmse/32_1.csv" afterPath="$PROJECT_DIR$/25X25/rmse/32_1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CCL.py" afterPath="$PROJECT_DIR$/CCL.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ComplicatedPlot_2.py" afterPath="$PROJECT_DIR$/ComplicatedPlot_2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CreatingArrays.py" afterPath="$PROJECT_DIR$/CreatingArrays.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/array1.csv" afterPath="$PROJECT_DIR$/array1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/array2.csv" afterPath="$PROJECT_DIR$/array2.csv" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,28 +75,29 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$MLsAutomatedScriptFor25x25.coverage" NAME="MLsAutomatedScriptFor25x25 Coverage Results" MODIFIED="1530591456592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/25X25" />
-    <SUITE FILE_PATH="coverage/PrecipitationPrediction$PlotIfYouCan.coverage" NAME="PlotIfYouCan Coverage Results" MODIFIED="1530682123717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PrecipitationPrediction$CCL.coverage" NAME="CCL Coverage Results" MODIFIED="1531357906180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PrecipitationPrediction$PolyRAutomatedStriptFor25x25.coverage" NAME="PolyRAutomatedStriptFor25x25 Coverage Results" MODIFIED="1530425671652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/25X25" />
+    <SUITE FILE_PATH="coverage/PrecipitationPrediction$CCL.coverage" NAME="CCL Coverage Results" MODIFIED="1531457335143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$SingleModelPlot.coverage" NAME="SingleModelPlot Coverage Results" MODIFIED="1531095744220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PrecipitationPrediction$ComplicatedPlot_2.coverage" NAME="ComplicatedPlot_2 Coverage Results" MODIFIED="1531259720074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PrecipitationPrediction$MLsAutomatedScriptFor25x25_Modified.coverage" NAME="MLsAutomatedScriptFor25x25_Modified Coverage Results" MODIFIED="1530738230322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/25X25" />
+    <SUITE FILE_PATH="coverage/PrecipitationPrediction$ComplicatedPlot_2.coverage" NAME="ComplicatedPlot_2 Coverage Results" MODIFIED="1531454048982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$PlotNewOldModelError.coverage" NAME="PlotNewOldModelError Coverage Results" MODIFIED="1531259493108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PrecipitationPrediction$AvgRainPerModel.coverage" NAME="AvgRainPerModel Coverage Results" MODIFIED="1531250980135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PrecipitationPrediction$LRAutomatedStriptFor25x25.coverage" NAME="LRAutomatedStriptFor25x25 Coverage Results" MODIFIED="1530410735600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/25X25" />
+    <SUITE FILE_PATH="coverage/PrecipitationPrediction$Plot_KNN_LR_WA.coverage" NAME="Plot_KNN_LR_WA Coverage Results" MODIFIED="1531261483606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PrecipitationPrediction$PCAAnalysis.coverage" NAME="PCAAnalysis Coverage Results" MODIFIED="1530681883115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PrecipitationPrediction$PlotMatrices.coverage" NAME="PlotMatrices Coverage Results" MODIFIED="1530909643687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PrecipitationPrediction$PlotIfYouCan.coverage" NAME="PlotIfYouCan Coverage Results" MODIFIED="1530682123717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PrecipitationPrediction$PolyRAutomatedStriptFor25x25.coverage" NAME="PolyRAutomatedStriptFor25x25 Coverage Results" MODIFIED="1530425671652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/25X25" />
+    <SUITE FILE_PATH="coverage/PrecipitationPrediction$MLsAutomatedScriptFor25x25_Modified.coverage" NAME="MLsAutomatedScriptFor25x25_Modified Coverage Results" MODIFIED="1531368182617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/25X25" />
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$CalculatingForPaper.coverage" NAME="CalculatingForPaper Coverage Results" MODIFIED="1530659800467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$Paper_MinMaxAvgStd.coverage" NAME="Paper_MinMaxAvgStd Coverage Results" MODIFIED="1531171429040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PrecipitationPrediction$AvgRainPerModel.coverage" NAME="AvgRainPerModel Coverage Results" MODIFIED="1531250980135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$PlotNewModelError.coverage" NAME="PlotNewModelError Coverage Results" MODIFIED="1531259419445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PrecipitationPrediction$LRAutomatedStriptFor25x25.coverage" NAME="LRAutomatedStriptFor25x25 Coverage Results" MODIFIED="1530410735600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/25X25" />
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$Paper_ErrorsOfOldModels.coverage" NAME="Paper_ErrorsOfOldModels Coverage Results" MODIFIED="1531259130300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PrecipitationPrediction$CreatingArrays.coverage" NAME="CreatingArrays Coverage Results" MODIFIED="1531345436862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PrecipitationPrediction$CreatingArrays.coverage" NAME="CreatingArrays Coverage Results" MODIFIED="1531425153110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$ReadArrays.coverage" NAME="ReadArrays Coverage Results" MODIFIED="1531353875536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$CCLForAReason.coverage" NAME="CCLForAReason Coverage Results" MODIFIED="1530484713715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$ReshapingArray.coverage" NAME="ReshapingArray Coverage Results" MODIFIED="1530832431579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PrecipitationPrediction$Plot_KNN_LR_WA.coverage" NAME="Plot_KNN_LR_WA Coverage Results" MODIFIED="1531261483606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$ComplicatedPlot.coverage" NAME="ComplicatedPlot Coverage Results" MODIFIED="1530817600592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PrecipitationPrediction$PCAAnalysis.coverage" NAME="PCAAnalysis Coverage Results" MODIFIED="1530681883115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PrecipitationPrediction$PlotMatrices.coverage" NAME="PlotMatrices Coverage Results" MODIFIED="1530909643687" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$SingleModelPlot2.coverage" NAME="SingleModelPlot2 Coverage Results" MODIFIED="1531096759453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PrecipitationPrediction$PlottingArrays.coverage" NAME="PlottingArrays Coverage Results" MODIFIED="1531438766901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$TestingKShift.coverage" NAME="TestingKShift Coverage Results" MODIFIED="1530737754775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -52,8 +109,8 @@
       <file leaf-file-name="ComplicatedPlot_2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ComplicatedPlot_2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13095">
-              <caret line="503" column="0" lean-forward="false" selection-start-line="503" selection-start-column="0" selection-end-line="503" selection-end-column="72" />
+            <state relative-caret-position="214">
+              <caret line="530" column="51" lean-forward="false" selection-start-line="530" selection-start-column="51" selection-end-line="530" selection-end-column="51" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -61,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Plot_KNN_LR_WA.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Plot_KNN_LR_WA.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Plot_KNN_LR_WA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="96" column="31" lean-forward="false" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="49" />
+            <state relative-caret-position="-452">
+              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -76,10 +133,56 @@
       <file leaf-file-name="SingleModelPlot.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SingleModelPlot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="28" column="51" lean-forward="false" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+            <state relative-caret-position="162">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="22" selection-end-column="19" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CCL.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CCL.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="166" column="32" lean-forward="true" selection-start-line="166" selection-start-column="32" selection-end-line="166" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreatingArrays.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CreatingArrays.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="99" column="19" lean-forward="true" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
+              <folding>
+                <element signature="e#699#726#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlottingArrays.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PlottingArrays.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="403">
+              <caret line="67" column="34" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadArrays.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReadArrays.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="20" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -141,7 +244,6 @@
         <option value="$PROJECT_DIR$/PCAAnalysis.py" />
         <option value="$PROJECT_DIR$/PlotIfYouCan.py" />
         <option value="$PROJECT_DIR$/TestingKShift.py" />
-        <option value="$PROJECT_DIR$/25X25/MLsAutomatedScriptFor25x25_Modified.py" />
         <option value="$PROJECT_DIR$/25X25/MAEForEachXY25_25_9_Modified.py" />
         <option value="$PROJECT_DIR$/25X25/RMSEForEachXY25_25_9_Modified.py" />
         <option value="$PROJECT_DIR$/ComplicatedPlot.py" />
@@ -157,11 +259,13 @@
         <option value="$PROJECT_DIR$/Paper_ErrorsOfOldModels.py" />
         <option value="$PROJECT_DIR$/PlotNewModelError.py" />
         <option value="$PROJECT_DIR$/PlotNewOldModelError.py" />
-        <option value="$PROJECT_DIR$/ComplicatedPlot_2.py" />
         <option value="$PROJECT_DIR$/Plot_KNN_LR_WA.py" />
-        <option value="$PROJECT_DIR$/CreatingArrays.py" />
         <option value="$PROJECT_DIR$/CCLForAReason.py" />
         <option value="$PROJECT_DIR$/ReadArrays.py" />
+        <option value="$PROJECT_DIR$/25X25/MLsAutomatedScriptFor25x25_Modified.py" />
+        <option value="$PROJECT_DIR$/CreatingArrays.py" />
+        <option value="$PROJECT_DIR$/PlottingArrays.py" />
+        <option value="$PROJECT_DIR$/ComplicatedPlot_2.py" />
         <option value="$PROJECT_DIR$/CCL.py" />
       </list>
     </option>
@@ -216,7 +320,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="15X15" />
+              <option name="myItemId" value="25X25" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -231,42 +335,6 @@
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RunManager" selected="Python.CCL">
-    <configuration default="false" name="ComplicatedPlot_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PrecipitationPrediction" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ComplicatedPlot_2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Plot_KNN_LR_WA" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PrecipitationPrediction" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Plot_KNN_LR_WA.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="CreatingArrays" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -303,7 +371,25 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="ReadArrays" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="MLsAutomatedScriptFor25x25_Modified" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/25X25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PrecipitationPrediction" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/25X25/MLsAutomatedScriptFor25x25_Modified.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PlottingArrays" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -316,7 +402,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PrecipitationPrediction" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ReadArrays.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PlottingArrays.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ComplicatedPlot_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PrecipitationPrediction" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ComplicatedPlot_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -536,19 +640,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.ComplicatedPlot_2" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Plot_KNN_LR_WA" />
-      <item index="2" class="java.lang.String" itemvalue="Python.CreatingArrays" />
-      <item index="3" class="java.lang.String" itemvalue="Python.CCL" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ReadArrays" />
+      <item index="0" class="java.lang.String" itemvalue="Python.CreatingArrays" />
+      <item index="1" class="java.lang.String" itemvalue="Python.CCL" />
+      <item index="2" class="java.lang.String" itemvalue="Python.MLsAutomatedScriptFor25x25_Modified" />
+      <item index="3" class="java.lang.String" itemvalue="Python.PlottingArrays" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ComplicatedPlot_2" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.CCL" />
-        <item index="1" class="java.lang.String" itemvalue="Python.ReadArrays" />
-        <item index="2" class="java.lang.String" itemvalue="Python.CreatingArrays" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Plot_KNN_LR_WA" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ComplicatedPlot_2" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ComplicatedPlot_2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.PlottingArrays" />
+        <item index="3" class="java.lang.String" itemvalue="Python.CreatingArrays" />
+        <item index="4" class="java.lang.String" itemvalue="Python.MLsAutomatedScriptFor25x25_Modified" />
       </list>
     </recent_temporary>
   </component>
@@ -567,26 +671,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18098818" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18367347" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29944134" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39106146" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -622,20 +726,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python35/site-packages/sklearn/linear_model/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="449" column="8" lean-forward="false" selection-start-line="449" selection-start-column="8" selection-end-line="449" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/25X25/OrLRAutomatedStriptFor25x25.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4050">
-          <caret line="169" column="29" lean-forward="false" selection-start-line="169" selection-start-column="29" selection-end-line="169" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/25X25/LRAutomatedStriptFor25x25.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -895,13 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/25X25/MLsAutomatedScriptFor25x25_Modified.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1809">
-          <caret line="178" column="107" lean-forward="false" selection-start-line="178" selection-start-column="99" selection-end-line="178" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/25X25/MAEForEachXY25_25_9_Modified.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -916,50 +999,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ComplicatedPlot_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13095">
-          <caret line="503" column="0" lean-forward="false" selection-start-line="503" selection-start-column="0" selection-end-line="503" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CCLForAReason.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="808">
           <caret line="345" column="0" lean-forward="true" selection-start-line="345" selection-start-column="0" selection-end-line="345" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CCL.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2752">
-          <caret line="107" column="27" lean-forward="false" selection-start-line="107" selection-start-column="27" selection-end-line="107" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReadArrays.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SingleModelPlot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="28" column="51" lean-forward="false" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -983,23 +1026,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CreatingArrays.py">
+    <entry file="file://$PROJECT_DIR$/25X25/MLsAutomatedScriptFor25x25_Modified.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="35" selection-end-column="54" />
+        <state relative-caret-position="81">
+          <caret line="146" column="28" lean-forward="false" selection-start-line="146" selection-start-column="28" selection-end-line="146" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReadArrays.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="20" selection-end-column="27" />
           <folding>
-            <element signature="e#699#726#0" expanded="true" />
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Plot_KNN_LR_WA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="96" column="31" lean-forward="false" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="49" />
+        <state relative-caret-position="-452">
+          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SingleModelPlot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CreatingArrays.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="99" column="19" lean-forward="true" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
+          <folding>
+            <element signature="e#699#726#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlottingArrays.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="67" column="34" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ComplicatedPlot_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="530" column="51" lean-forward="false" selection-start-line="530" selection-start-column="51" selection-end-line="530" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CCL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="166" column="32" lean-forward="true" selection-start-line="166" selection-start-column="32" selection-end-line="166" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -27,9 +27,10 @@ while the second one considers only old models
 from netCDF4 import Dataset
 import numpy as np
 import pandas as pd
+from copy import deepcopy
 np.seterr(divide='ignore', invalid='ignore')
 
-threshold = 10
+threshold = 0.10
 
 # read MAE and RMSE files
 readDataMAE = pd.read_csv('new_results/RMSE25x25_calculations_modified.csv', header=None)
@@ -46,8 +47,10 @@ def array1():
         print('xxxxxxxxxxxxxxxxxxxxxxx', i - 1, 'xxxxxxxxxxxxxxxxxxxxxxxxxx')
         readError = pd.to_numeric(np.array(readDataMAE[i])[1:])  # change index every time
         temp = (readError - AllBest) / AllBest
-        temp[temp < threshold] = 1
-        temp[temp >= threshold] = 0
+        # print((temp < .10).sum())
+        temp2 = deepcopy(temp)
+        temp2[temp < threshold] = 1
+        temp2[temp >= threshold] = 0
 
         # resizing, it takes time
         f_array = []
@@ -59,7 +62,7 @@ def array1():
                 if not tempCheck.any():
                     f_array.append(' ')
                 else:
-                    f_array.append(str(temp[f_index]))
+                    f_array.append(str(temp2[f_index]))
                     f_index += 1
 
         first_array.append(f_array)
@@ -71,8 +74,9 @@ def array2():
         print('xxxxxxxxxxxxxxxxxxxxxxx', i - 1, '############################')
         readError = pd.to_numeric(np.array(readDataMAE[i])[1:])  # change index every time
         temp = (readError - OldBest) / OldBest
-        temp[temp < threshold] = 1
-        temp[temp >= threshold] = 0
+        temp2 = deepcopy(temp)
+        temp2[temp < threshold] = 1
+        temp2[temp >= threshold] = 0
 
         # resizing, it takes time
         f_array = []
@@ -84,15 +88,15 @@ def array2():
                 if not tempCheck.any():
                     f_array.append(' ')
                 else:
-                    f_array.append(str(temp[f_index]))
+                    f_array.append(str(temp2[f_index]))
                     f_index += 1
 
         second_array.append(f_array)
     return np.array(second_array)
 
-arr1 = array1()
+# arr1 = array1()
 arr2 = array2()
-np.savetxt('array1.csv', arr1, delimiter=',', fmt='%s')
+# np.savetxt('array1.csv', arr1, delimiter=',', fmt='%s')
 np.savetxt('array2.csv', arr2, delimiter=',', fmt='%s')
-print(arr1)
+# print(arr1)
 print(arr2)
