@@ -50,7 +50,38 @@ def data_visualization_2dr(w_data, title, i=0, visualize=True):
         plt.show()
         plt.close()
 #
+def show_images(images, cols, titles):
+    min_v = np.nanmin(images)
+    max_v = np.nanmax(images[images != np.inf])
+    print(min_v, max_v)
+    # assert ((titles is None) or (len(images) == len(titles)))
+    n_images = len(images)
+    if titles is None: titles = ['Image (%d)' % i for i in range(1, n_images + 1)]
+    fig = plt.figure(num=None, figsize=(20, 4), dpi=100, facecolor='w', edgecolor='k')
+    fig.suptitle(titles)
+    for n, (image, title) in enumerate(zip(images, titles)):
+        # a = fig.add_subplot(cols, np.ceil(n_images / float(cols)), n + 1)
+        a = fig.add_subplot(1, 3, n + 1)
+        plt.axis([0, len(image[0]), 0, len(image)])
+        # image[image >= 0] = 0
+        # image[image > 10] = 0
+        x, y = image.nonzero()
+        c = image[x, y]
 
+        im = plt.scatter(y[:], x[:], c=c[:], cmap='jet', s=2)
+        # if n == 8:
+        #     plt.ylabel('Vertical Grid')
+        if n == 0:
+            plt.title('(a)')
+        if n == 1:
+            plt.title('(b)')
+        if n == 2:
+            plt.title('(c)')
+        plt.clim(min_v, max_v)
+    cbar_ax = fig.add_axes([0.92, 0.15, 0.01, 0.7])
+    fig.colorbar(im, cax=cbar_ax)
+    # plt.show()
+    plt.savefig('analyze_new_model_error.png')
 
 
 def newBestAmongAllPlot():
@@ -90,9 +121,16 @@ for grid_y in range(1, 45): # for every y
             f_diffNewOld.append(diffNewOld[f_index])
             f_index += 1
 
-data_visualization_2dr(np.array(f_newBestAmongAll).reshape((44, 65)), title='Plotting the error of new model beats old models')
-data_visualization_2dr(np.array(f_bestAmongNew).reshape((44, 65)), title='Plotting the error of new best model')
-data_visualization_2dr(np.array(f_diffNewOld).reshape((44, 65)), title='Plotting the difference between best new and best old model')
+final = []
+final.append(np.array(f_newBestAmongAll).reshape((44, 65)))
+final.append(np.array(f_bestAmongNew).reshape((44, 65)))
+final.append(np.array(f_diffNewOld).reshape((44, 65)))
+
+show_images(np.array(final), 1, titles="Analyzing errors of new model")
+
+# data_visualization_2dr(np.array(f_newBestAmongAll).reshape((44, 65)), title='Plotting the error of new model beats old models')
+# data_visualization_2dr(np.array(f_bestAmongNew).reshape((44, 65)), title='Plotting the error of new best model')
+# data_visualization_2dr(np.array(f_diffNewOld).reshape((44, 65)), title='Plotting the difference between best new and best old model')
 
 # np.savetxt('new_results/n_reshapingIfLR.csv', f_array, delimiter=',', fmt='%s')
 # print(np.array(f_array).reshape((44, 65)))

@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a02a84d7-de6c-410f-815a-fe5222bb6666" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PlotMLMethods.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PlotMinToMaxError.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RemovingMAXzero.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/involvement_of_each_model.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/avg_values.png" afterPath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/avg_values.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/knn_lr_wa.png" afterPath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/knn_lr_wa.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/max_values.png" afterPath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/max_values.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/min_values.png" afterPath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/min_values.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/new_model_best.png" afterPath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/new_model_best.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/new_model_best_by_avg.png" afterPath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/new_model_best_by_avg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/new_old_model_best.png" afterPath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/new_old_model_best.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/new_old_model_best_by_avg.png" afterPath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/new_old_model_best_by_avg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/std_by_avg.png" afterPath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/std_by_avg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/std_values.png" afterPath="$PROJECT_DIR$/RAINFALL_PAPER/FinalPlots/std_values.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ComplicatedPlot_2.py" afterPath="$PROJECT_DIR$/ComplicatedPlot_2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlotNewModelError.py" afterPath="$PROJECT_DIR$/PlotNewModelError.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlotNewOldModelError.py" afterPath="$PROJECT_DIR$/PlotNewOldModelError.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Plot_KNN_LR_WA.py" afterPath="$PROJECT_DIR$/Plot_KNN_LR_WA.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/15X15/MLsAutomatedScriptFor15x15.py" afterPath="$PROJECT_DIR$/15X15/MLsAutomatedScriptFor15x15.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReshapingArray.py" afterPath="$PROJECT_DIR$/ReshapingArray.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,7 +36,7 @@
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$CreatingArrays.coverage" NAME="CreatingArrays Coverage Results" MODIFIED="1531425153110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$ReadArrays.coverage" NAME="ReadArrays Coverage Results" MODIFIED="1531353875536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$CCLForAReason.coverage" NAME="CCLForAReason Coverage Results" MODIFIED="1530484713715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PrecipitationPrediction$ReshapingArray.coverage" NAME="ReshapingArray Coverage Results" MODIFIED="1531783446942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PrecipitationPrediction$ReshapingArray.coverage" NAME="ReshapingArray Coverage Results" MODIFIED="1531857262581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$PlotMLMethods.coverage" NAME="PlotMLMethods Coverage Results" MODIFIED="1531644598794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$ComplicatedPlot.coverage" NAME="ComplicatedPlot Coverage Results" MODIFIED="1530817600592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PrecipitationPrediction$SingleModelPlot2.coverage" NAME="SingleModelPlot2 Coverage Results" MODIFIED="1531096759453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -81,8 +64,8 @@
       <file leaf-file-name="Plot_KNN_LR_WA.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Plot_KNN_LR_WA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="837">
-              <caret line="49" column="47" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="49" selection-end-column="47" />
+            <state relative-caret-position="2403">
+              <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="73" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -93,28 +76,28 @@
       <file leaf-file-name="ReshapingArray.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReshapingArray.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="45" column="35" lean-forward="false" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+            <state relative-caret-position="1593">
+              <caret line="77" column="18" lean-forward="false" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MLsAutomatedScriptFor15x15.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MLsAutomatedScriptFor15x15.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/15X15/MLsAutomatedScriptFor15x15.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="449" column="12" lean-forward="false" selection-start-line="449" selection-start-column="12" selection-end-line="450" selection-end-column="38" />
+            <state relative-caret-position="432">
+              <caret line="35" column="35" lean-forward="true" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MLsAutomatedScriptFor15x15_Modified.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MLsAutomatedScriptFor15x15_Modified.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/15X15/MLsAutomatedScriptFor15x15_Modified.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="808">
-              <caret line="409" column="23" lean-forward="false" selection-start-line="409" selection-start-column="23" selection-end-line="409" selection-end-column="31" />
+            <state relative-caret-position="10420">
+              <caret line="409" column="46" lean-forward="true" selection-start-line="408" selection-start-column="0" selection-end-line="409" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -177,7 +160,6 @@
         <option value="$PROJECT_DIR$/15X15/RMSEForEachXY15_15.py" />
         <option value="$PROJECT_DIR$/5X5/MAEForEachXY5_5_9.py" />
         <option value="$PROJECT_DIR$/5X5/RMSEForEachXY5_5_9.py" />
-        <option value="$PROJECT_DIR$/15X15/MLsAutomatedScriptFor15x15.py" />
         <option value="$PROJECT_DIR$/CalculatingForPaper.py" />
         <option value="$PROJECT_DIR$/PCAAnalysis.py" />
         <option value="$PROJECT_DIR$/PlotIfYouCan.py" />
@@ -208,6 +190,7 @@
         <option value="$PROJECT_DIR$/Plot_KNN_LR_WA.py" />
         <option value="$PROJECT_DIR$/ComplicatedPlot_2.py" />
         <option value="$PROJECT_DIR$/ReshapingArray.py" />
+        <option value="$PROJECT_DIR$/15X15/MLsAutomatedScriptFor15x15.py" />
       </list>
     </option>
   </component>
@@ -614,7 +597,7 @@
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23200859" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19495167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -957,16 +940,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Plot_KNN_LR_WA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="49" column="47" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="49" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/minMaxAvgStd.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1008,32 +981,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1863">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Plot_KNN_LR_WA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2403">
+          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="73" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/15X15/MLsAutomatedScriptFor15x15_Modified.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10420">
+          <caret line="409" column="46" lean-forward="true" selection-start-line="408" selection-start-column="0" selection-end-line="409" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ReshapingArray.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="45" column="35" lean-forward="false" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+        <state relative-caret-position="1593">
+          <caret line="77" column="18" lean-forward="false" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/15X15/MLsAutomatedScriptFor15x15.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="449" column="12" lean-forward="false" selection-start-line="449" selection-start-column="12" selection-end-line="450" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/15X15/MLsAutomatedScriptFor15x15_Modified.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
-          <caret line="409" column="23" lean-forward="false" selection-start-line="409" selection-start-column="23" selection-end-line="409" selection-end-column="31" />
+        <state relative-caret-position="432">
+          <caret line="35" column="35" lean-forward="true" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
           <folding />
         </state>
       </provider>

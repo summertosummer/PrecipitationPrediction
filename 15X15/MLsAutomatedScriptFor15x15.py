@@ -37,22 +37,22 @@ if not os.path.exists('coef15_15'):
     os.makedirs('coef15_15')
 
 #access netcdf data file
-netcdf_entire_dataset = Dataset("F:/dataset/rain_data/summing_dataset15_15.nc", "r")
+netcdf_entire_dataset = Dataset("summing_dataset15_15.nc", "r")
 rain_models = netcdf_entire_dataset.variables['summing_models']
 
-with open('../random70.csv') as csvf:
+with open('random70.csv') as csvf:
     ind70 = csv.reader(csvf)
     indexi70 = list(ind70)
     index70 = indexi70[0]
 
-with open('../random30.csv') as csvf:
+with open('random30.csv') as csvf:
     ind30 = csv.reader(csvf)
     indexi30 = list(ind30)
     index30 = indexi30[0]
 
 #read MAE and RMSE files
-dfMAE = pd.read_csv('MAE15x15.csv', header=None)
-dfRMSE = pd.read_csv('RMSE15x15.csv', header=None)
+dfMAE = pd.read_csv('MAE15x15_modified.csv', header=None)
+dfRMSE = pd.read_csv('RMSE15x15_modified.csv', header=None)
 
 '''
 # commented out plotting area, because Dr. Hamdy's machine doesn't have pyplot installed
@@ -345,9 +345,13 @@ check.write('\n')
 total = 0
 countMAE = 0
 countRMSE = 0
-for grid_y in range(22, 45): # for every y
-    for grid_x in range(22, 66): # for every x
+tempCheck = []
+for grid_y in range(1, 76): # for every y
+    for grid_x in range(1, 111): # for every x
         print('=================PLACE:', grid_x, grid_y, '=====================')
+        tempCheck = rain_models[:20, :10, 0, grid_y, grid_x]
+        if not tempCheck.any():
+            continue
 
         flag = True
         for _ in range(1): # looping 15 times to find the best model
