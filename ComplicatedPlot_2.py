@@ -18,10 +18,10 @@ import pandas as pd
 import os
 from copy import deepcopy
 
-maxVal = 0
+maxVal = 50
 
 #read MAE and RMSE files
-ifLR = pd.read_csv('new_results/reshapingIfLR.csv', header=None)
+ifLR = pd.read_csv('new_results/n_reshapingIfLR.csv', header=None)
 checkIfLR = np.array(ifLR[0])[:].reshape((44, 65))
 checkIfLR = checkIfLR.astype(str)
 checkIfLR = np.char.replace(checkIfLR, " ", "")
@@ -30,11 +30,14 @@ checkIfLR = np.char.replace(checkIfLR, " ", "")
 netcdf_entire_dataset = Dataset("F:/dataset/rain_data/summing_dataset.nc", "r")
 rain_models = netcdf_entire_dataset.variables['summing_models']
 
+readDataN = pd.read_csv('final_results/ModelsInfo25x25_modified_final_calculation.csv', header=None)
+tempMAE = pd.to_numeric(np.array(readDataN[23])[1:2391])
+WAItself = pd.to_numeric(np.array(readDataN[19])[1:2391])
+BestNew = pd.to_numeric(np.array(readDataN[21])[1:2391])
+
 # read MAE and RMSE files
 readDataMAE = pd.read_csv('new_results/RMSE25x25_calculations_modified.csv', header=None)
-tempMAE = pd.to_numeric(np.array(readDataMAE[33])[1:])
-WAItself = pd.to_numeric(np.array(readDataMAE[29])[1:])
-BestNew = pd.to_numeric(np.array(readDataMAE[31])[1:])
+
 
 def create_array(grid_y, grid_x, f_ind):
     readData = pd.read_csv('pca2/' + str(grid_x) + '_' + str(grid_y) + '.csv', header=None)
@@ -488,20 +491,20 @@ def create_array(grid_y, grid_x, f_ind):
 
     return temp
 
-# f_array = []
-# f_index = 0
-# for grid_y in range(1, 45): # for every y
-#     for grid_x in range(1, 66): # for every x
-#         print('=================PLACE:', grid_x, grid_y, '=====================')
-#         tempCheck = rain_models[:20, :10, 0, grid_y, grid_x]
-#         if not tempCheck.any():
-#             f_array.append([0]*24)
-#         else:
-#             getArr = create_array(grid_y, grid_x, f_index)
-#             f_array.append(getArr)
-#             f_index += 1
-#             # print(f_array)
-# np.savetxt('complicated_2vlatest.csv', f_array, delimiter=',', fmt='%s')
+f_array = []
+f_index = 0
+for grid_y in range(1, 45): # for every y
+    for grid_x in range(1, 66): # for every x
+        print('=================PLACE:', grid_x, grid_y, '=====================')
+        tempCheck = rain_models[:20, :10, 0, grid_y, grid_x]
+        if not tempCheck.any():
+            f_array.append([0]*24)
+        else:
+            getArr = create_array(grid_y, grid_x, f_index)
+            f_array.append(getArr)
+            f_index += 1
+            # print(f_array)
+np.savetxt('n_complicated_2vlatest.csv', f_array, delimiter=',', fmt='%s')
 
 
 def show_images(images, cols, titles):
@@ -531,10 +534,10 @@ def show_images(images, cols, titles):
     cbar_ax = fig.add_axes([0.92, 0.15, 0.01, 0.7])
     fig.colorbar(im, cax=cbar_ax)
     # plt.show()
-    plt.savefig('involvement_of_each_model_new.png')
+    plt.savefig('n_involvement_of_each_model_new.png')
 
 #read MAE and RMSE files
-readData = pd.read_csv('complicated_2v2.csv', header=None)
+readData = pd.read_csv('n_complicated_2vlatest.csv', header=None)
 imagesArr = []
 for i in range(24):
     temp = pd.to_numeric(np.array(readData[i])[:]).reshape((44, 65))

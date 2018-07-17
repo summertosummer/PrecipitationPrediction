@@ -1,0 +1,2860 @@
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+ KNN
+ KNN
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ NN
+ KNN
+0
+0
+0
+0
+0
+0
+0
+0
+0
+ RF
+ RF
+ NN
+ KNN
+ KNN
+ LR
+ RF
+ KNN
+ RF
+ LR
+ LR
+ KNN
+ SVR
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+ KNN
+ LR
+ LR
+ KNN
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ NN
+ SVR
+ KNN
+0
+0
+0
+0
+0
+0
+0
+0
+ RF
+ RF
+ NN
+ NN
+ LR
+ NN
+ NN
+ LR
+ LR
+ LR
+ LR
+ NN
+ RF
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ NN
+ KNN
+ LR
+ NN
+ NN
+ NN
+0
+0
+0
+0
+0
+0
+0
+0
+ SVR
+ SVR
+ RF
+ KNN
+ KNN
+ KNN
+ KNN
+ NN
+ KNN
+ NN
+ KNN
+ KNN
+ RF
+ RF
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+ RF
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ NN
+ NN
+ KNN
+ KNN
+ LR
+ LR
+ NN
+ SVR
+ KNN
+0
+0
+0
+0
+0
+0
+0
+ NN
+ NN
+ NN
+ NN
+ NN
+ NN
+ KNN
+ RF
+ NN
+ RF
+ RF
+ LR
+ KNN
+ RF
+ RF
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+ NN
+ LR
+ LR
+ LR
+ KNN
+ LR
+ KNN
+ KNN
+ NN
+ KNN
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ RF
+ NN
+ NN
+ RF
+ RF
+ RF
+0
+ RF
+ RF
+ NN
+ NN
+ KNN
+ NN
+ NN
+ NN
+ RF
+ SVR
+ RF
+ SVR
+ NN
+ SVR
+ RF
+ RF
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+ KNN
+ KNN
+ KNN
+ NN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ KNN
+ RF
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ RF
+ RF
+ NN
+ NN
+ NN
+ NN
+ KNN
+ KNN
+ KNN
+ RF
+ KNN
+ KNN
+ NN
+ NN
+ SVR
+ SVR
+ RF
+ RF
+ RF
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+ RF
+ NN
+ KNN
+ KNN
+ LR
+ RF
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ KNN
+ LR
+ KNN
+ KNN
+ RF
+ LR
+ KNN
+ KNN
+ NN
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ NN
+ NN
+ SVR
+ SVR
+ SVR
+ RF
+ RF
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+ RF
+ RF
+ NN
+ KNN
+ LR
+ KNN
+ RF
+ RF
+ RF
+ LR
+ RF
+ RF
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ RF
+ RF
+ RF
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ RF
+ KNN
+ NN
+ LR
+ RF
+ NN
+ NN
+ RF
+ SVR
+ RF
+ RF
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+ RF
+ KNN
+ KNN
+ SVR
+ NN
+ NN
+ KNN
+ LR
+ KNN
+ NN
+ RF
+ NN
+ NN
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ RF
+ NN
+ KNN
+ LR
+ NN
+ SVR
+ RF
+ KNN
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+ SVR
+ NN
+0
+0
+0
+0
+0
+ LR
+ KNN
+ KNN
+ KNN
+ NN
+ KNN
+ LR
+ NN
+ RF
+ LR
+ NN
+ NN
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ RF
+ LR
+ KNN
+ LR
+ LR
+ RF
+ RF
+ LR
+ LR
+ LR
+ LR
+ RF
+ LR
+ LR
+ LR
+ KNN
+ NN
+ NN
+ LR
+ KNN
+ KNN
+ SVR
+ KNN
+ NN
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+ RF
+ NN
+ SVR
+ LR
+0
+0
+ RF
+ KNN
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ RF
+ LR
+ RF
+ KNN
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ NN
+ NN
+ SVR
+ RF
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+ LR
+ RF
+ SVR
+ KNN
+ KNN
+ SVR
+ RF
+ SVR
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ NN
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ NN
+ RF
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ NN
+ SVR
+ KNN
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+ LR
+0
+0
+ KNN
+ RF
+ SVR
+ RF
+ RF
+ SVR
+ RF
+ NN
+ KNN
+ LR
+ LR
+ LR
+ SVR
+ NN
+ KNN
+ LR
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ RF
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ SVR
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+ SVR
+ RF
+ KNN
+ RF
+ LR
+ RF
+ RF
+ RF
+ KNN
+ SVR
+ SVR
+ KNN
+ LR
+ LR
+ LR
+ SVR
+ RF
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ SVR
+ SVR
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+ RF
+ RF
+ RF
+ RF
+ RF
+ RF
+ RF
+ RF
+ RF
+ KNN
+ KNN
+ RF
+ SVR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ SVR
+ SVR
+ NN
+ NN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ KNN
+ KNN
+ KNN
+ RF
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ SVR
+ SVR
+ RF
+0
+0
+0
+0
+0
+0
+0
+0
+0
+ RF
+ RF
+ RF
+ RF
+ RF
+ RF
+ KNN
+ RF
+ SVR
+ RF
+ RF
+ RF
+ SVR
+ NN
+ LR
+ LR
+ LR
+ LR
+ KNN
+ NN
+ RF
+ NN
+ NN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ RF
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ RF
+ LR
+ KNN
+ KNN
+ LR
+ KNN
+ NN
+ SVR
+ SVR
+ RF
+ RF
+0
+0
+0
+0
+0
+0
+0
+ RF
+ RF
+ SVR
+ RF
+ KNN
+ SVR
+ RF
+ KNN
+ SVR
+ RF
+ RF
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ NN
+ NN
+ NN
+ RF
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ KNN
+ KNN
+ NN
+ RF
+ RF
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ KNN
+ LR
+ KNN
+ RF
+ NN
+ NN
+ KNN
+ RF
+0
+0
+0
+0
+0
+0
+ RF
+ RF
+ RF
+ SVR
+ SVR
+ SVR
+ KNN
+ LR
+ LR
+ LR
+ NN
+ NN
+ SVR
+ NN
+ LR
+ KNN
+ RF
+ KNN
+ LR
+ LR
+ NN
+ NN
+ RF
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ KNN
+ NN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ NN
+ KNN
+ NN
+ NN
+ RF
+0
+0
+0
+0
+ RF
+ RF
+ RF
+ RF
+ RF
+ RF
+ KNN
+ LR
+ LR
+ SVR
+ SVR
+ SVR
+ SVR
+ NN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ NN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ NN
+ NN
+ RF
+ NN
+ NN
+ KNN
+0
+0
+0
+ RF
+ RF
+ RF
+ RF
+ RF
+ KNN
+ LR
+ NN
+ RF
+ SVR
+ SVR
+ NN
+ NN
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ KNN
+ LR
+ LR
+ RF
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ NN
+ NN
+ LR
+ NN
+ SVR
+0
+0
+0
+ RF
+ SVR
+ RF
+ RF
+ KNN
+ SVR
+ SVR
+ SVR
+ SVR
+ SVR
+ SVR
+ SVR
+ NN
+ NN
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ RF
+ KNN
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ KNN
+ SVR
+ LR
+ NN
+ KNN
+0
+0
+0
+ RF
+ RF
+ RF
+ LR
+ KNN
+ SVR
+ KNN
+ RF
+ NN
+ SVR
+ NN
+ KNN
+ RF
+ NN
+ NN
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ KNN
+ NN
+ NN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ RF
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ RF
+0
+0
+ RF
+ RF
+ RF
+ SVR
+ KNN
+ SVR
+ NN
+ LR
+ KNN
+ SVR
+ SVR
+ NN
+ NN
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ RF
+ RF
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ NN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ SVR
+ NN
+ KNN
+ LR
+ LR
+ LR
+ NN
+ KNN
+ LR
+0
+0
+0
+ RF
+ RF
+ KNN
+ KNN
+ LR
+ NN
+ LR
+ LR
+ KNN
+ RF
+ SVR
+ SVR
+ SVR
+ NN
+ KNN
+ LR
+ KNN
+ LR
+ KNN
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ SVR
+ KNN
+ KNN
+ RF
+ LR
+ KNN
+ RF
+ RF
+0
+0
+ SVR
+ SVR
+ LR
+ LR
+ LR
+ NN
+ LR
+ LR
+ RF
+ RF
+ SVR
+ SVR
+ SVR
+ NN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ KNN
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ SVR
+ KNN
+ LR
+ RF
+ LR
+ KNN
+ RF
+ SVR
+ RF
+0
+0
+ RF
+ LR
+ KNN
+ LR
+ LR
+ KNN
+ LR
+ KNN
+ RF
+ NN
+ KNN
+ KNN
+ SVR
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ RF
+ KNN
+ NN
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ KNN
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ SVR
+ NN
+ SVR
+ NN
+ RF
+ KNN
+ RF
+ NN
+ RF
+ LR
+ RF
+0
+ KNN
+ LR
+ KNN
+ LR
+ LR
+ KNN
+ LR
+ KNN
+ RF
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ NN
+ NN
+ NN
+ NN
+ KNN
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ NN
+ NN
+ NN
+ NN
+ NN
+ NN
+ LR
+ NN
+ NN
+ NN
+0
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ RF
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ NN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ KNN
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ RF
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ NN
+ LR
+ RF
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ RF
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ NN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ KNN
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ RF
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ SVR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ RF
+ NN
+ SVR
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ RF
+ KNN
+ KNN
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ RF
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ KNN
+ NN
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ RF
+ RF
+ SVR
+ RF
+ KNN
+ LR
+ KNN
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ KNN
+ LR
+ LR
+ KNN
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ KNN
+ NN
+ NN
+ KNN
+ KNN
+ RF
+ NN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ KNN
+ KNN
+ LR
+ KNN
+ NN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ LR
+ RF
+ NN
+ SVR
+ NN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ KNN
+ KNN
+ NN
+ NN
+ KNN
+ KNN
+ KNN
+ RF
+ NN
+ NN
+ KNN
+ KNN
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+0
+ RF
+ KNN
+ KNN
+ LR
+ KNN
+ LR
+ KNN
+ NN
+ NN
+ SVR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ NN
+ NN
+ KNN
+ LR
+ LR
+ KNN
+ SVR
+ KNN
+ RF
+ NN
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ NN
+ LR
+ LR
+0
+ RF
+ RF
+ KNN
+ SVR
+ NN
+ LR
+ KNN
+ KNN
+ KNN
+ RF
+ LR
+ KNN
+ KNN
+ RF
+ KNN
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ NN
+ NN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ NN
+ KNN
+ LR
+ KNN
+ RF
+ KNN
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ RF
+ RF
+ RF
+0
+0
+ SVR
+ NN
+ LR
+ LR
+ LR
+ LR
+ NN
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ NN
+ NN
+ LR
+ LR
+ RF
+ RF
+ RF
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ RF
+ RF
+0
+0
+ KNN
+ KNN
+ KNN
+ NN
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ KNN
+ KNN
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ RF
+ LR
+ KNN
+ NN
+ NN
+ NN
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ NN
+ NN
+ NN
+ NN
+ SVR
+ LR
+0
+ SVR
+ SVR
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ NN
+ KNN
+ LR
+ RF
+ NN
+ NN
+ NN
+ NN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ NN
+ NN
+ KNN
+ NN
+ LR
+ LR
+ RF
+ RF
+ SVR
+ RF
+ LR
+ LR
+ LR
+ LR
+ LR
+ NN
+ LR
+ KNN
+ NN
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ LR
+ KNN
+ LR
+ KNN
+ LR
+ LR
+ NN
+ NN
+ NN
+ LR
+ RF
+ NN
+ KNN
+ NN
+ NN
+ LR
+ RF
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ NN
+ KNN
+ LR
+ KNN
+ KNN
+ KNN
+ RF
+ RF
+ RF
+ KNN
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ KNN
+ NN
+ KNN
+ KNN
+ LR
+ LR
+ KNN
+ LR
+ KNN
+ RF
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+ RF
+ SVR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ RF
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ NN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ KNN
+ RF
+ RF
+ RF
+ RF
+ NN
+ LR
+ KNN
+ LR
+ RF
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ KNN
+ KNN
+ KNN
+ SVR
+ KNN
+ NN
+ KNN
+ KNN
+ LR
+ KNN
+ LR
+ NN
+ NN
+ LR
+ LR
+ LR
+ RF
+ NN
+ RF
+ RF
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ NN
+ LR
+ KNN
+ LR
+ LR
+ KNN
+ RF
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ KNN
+ RF
+ RF
+ RF
+ SVR
+ NN
+ KNN
+ LR
+ LR
+ KNN
+ SVR
+ LR
+ LR
+ RF
+ LR
+ RF
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ RF
+ NN
+ LR
+ LR
+ KNN
+ LR
+ LR
+ KNN
+ KNN
+ NN
+ NN
+ LR
+ KNN
+ LR
+ NN
+ NN
+ LR
+ LR
+0
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ KNN
+ KNN
+0
+ RF
+ RF
+ SVR
+ NN
+ RF
+ NN
+ KNN
+ LR
+ LR
+ LR
+ LR
+ KNN
+ LR
+ LR
+ LR
+ NN
+ NN
+ LR
+ LR
+ LR
+ RF
+ KNN
+ KNN
+ RF
+ KNN
+ LR
+ LR
+ NN
+ KNN
+ KNN
+ NN
+ NN
+ NN
+ RF
+ KNN
+ KNN
+ NN
+ LR
+0
+0
+0
+0
+0
+ KNN
+ KNN
+ LR
+ LR
+ NN
+ NN
+ LR
+ KNN
+ KNN
+ RF
+ KNN
+ LR
+ LR
+ LR
+ KNN
+ KNN
+ KNN
+ LR
+ KNN
+ KNN
+ KNN
+0
+0
+ RF
+ SVR
+ NN
+ SVR
+ NN
+ KNN
+ KNN
+ LR
+ RF
+ LR
+ KNN
+ KNN
+ LR
+ LR
+ RF
+ NN
+ KNN
+ KNN
+ KNN
+ LR
+ KNN
+ LR
+ KNN
+ NN
+ LR
+ LR
+ SVR
+ RF
+ RF
+ SVR
+ RF
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+ RF
+ RF
+ SVR
+0
+0
+0
+0
+0
+0
+ KNN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ KNN
+ KNN
+0
+0
+ RF
+ RF
+ NN
+ NN
+ RF
+ KNN
+ LR
+ NN
+ LR
+ LR
+ KNN
+ KNN
+ LR
+ RF
+ KNN
+ NN
+ NN
+ LR
+ NN
+ LR
+ NN
+ KNN
+ LR
+ NN
+ LR
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+ NN
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+ LR
+0
+0

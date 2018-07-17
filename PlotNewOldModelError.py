@@ -20,6 +20,7 @@ from copy import deepcopy
 
 # read MAE and RMSE files
 readData = pd.read_csv('new_results/RMSE25x25_calculations_modified.csv', header=None)
+readDataN = pd.read_csv('final_results/ModelsInfo25x25_modified_final_calculation.csv', header=None)
 
 #access netcdf data file
 netcdf_entire_dataset = Dataset("F:/dataset/summing_dataset.nc", "r")
@@ -52,13 +53,13 @@ def show_images(images, cols, titles):
     cbar_ax = fig.add_axes([0.92, 0.15, 0.01, 0.7])
     fig.colorbar(im, cax=cbar_ax)
     # plt.show()
-    plt.savefig('new_old_model_best'+str(cols)+'.png')
+    plt.savefig('n_new_old_model_best'+str(cols)+'.png')
 
 imagesArr = []
 for i in range(2, 26):
     print(i)
     oldErr = pd.to_numeric(np.array(readData[i])[1:])
-    newErr = pd.to_numeric(np.array(readData[31])[1:])
+    newErr = pd.to_numeric(np.array(readDataN[21])[1:2391])
     temp = np.minimum(newErr, oldErr)
     imagesArr.append(temp)
 
