@@ -491,20 +491,62 @@ def create_array(grid_y, grid_x, f_ind):
 
     return temp
 
-f_array = []
-f_index = 0
-for grid_y in range(1, 45): # for every y
-    for grid_x in range(1, 66): # for every x
-        print('=================PLACE:', grid_x, grid_y, '=====================')
-        tempCheck = rain_models[:20, :10, 0, grid_y, grid_x]
-        if not tempCheck.any():
-            f_array.append([0]*24)
-        else:
-            getArr = create_array(grid_y, grid_x, f_index)
-            f_array.append(getArr)
-            f_index += 1
-            # print(f_array)
-np.savetxt('n_complicated_2vlatest.csv', f_array, delimiter=',', fmt='%s')
+# f_array = []
+# f_index = 0
+# for grid_y in range(1, 45): # for every y
+#     for grid_x in range(1, 66): # for every x
+#         print('=================PLACE:', grid_x, grid_y, '=====================')
+#         tempCheck = rain_models[:20, :10, 0, grid_y, grid_x]
+#         if not tempCheck.any():
+#             f_array.append([0]*24)
+#         else:
+#             getArr = create_array(grid_y, grid_x, f_index)
+#             f_array.append(getArr)
+#             f_index += 1
+#             # print(f_array)
+# np.savetxt('n_complicated_2vlatest.csv', f_array, delimiter=',', fmt='%s')
+
+
+# def show_images(images, cols, titles):
+#     min_v = np.nanmin(images)
+#     max_v = np.nanmax(images[images != np.inf])
+#     print(min_v, max_v)
+#     # assert ((titles is None) or (len(images) == len(titles)))
+#     n_images = len(images)
+#     if titles is None: titles = ['Image (%d)' % i for i in range(1, n_images + 1)]
+#     fig = plt.figure(num=None, figsize=(16, 12), dpi=100, facecolor='w', edgecolor='k')
+#     fig.suptitle(titles)
+#     for n, (image, title) in enumerate(zip(images, titles)):
+#         # a = fig.add_subplot(cols, np.ceil(n_images / float(cols)), n + 1)
+#         a = fig.add_subplot(6, 4, n + 1)
+#         plt.axis([0, len(image[0]), 0, len(image)])
+#         # image[image >= 0] = 0
+#         # image[image > 10] = 0
+#         x, y = image.nonzero()
+#         c = image[x, y]
+#
+#         im = plt.scatter(y[:], x[:], c=c[:], cmap='jet', s=1)
+#         if n == 8:
+#             plt.ylabel('Vertical Grid')
+#         if n == 21:
+#             plt.xlabel('Horizontal Grid')
+#         plt.clim(min_v, max_v)
+#     cbar_ax = fig.add_axes([0.92, 0.15, 0.01, 0.7])
+#     fig.colorbar(im, cax=cbar_ax)
+#     # plt.show()
+#     plt.savefig('n_involvement_of_each_model_new.png')
+#
+# #read MAE and RMSE files
+# readData = pd.read_csv('n_complicated_2vlatest.csv', header=None)
+# imagesArr = []
+# for i in range(24):
+#     temp = pd.to_numeric(np.array(readData[i])[:]).reshape((44, 65))
+#     temp[temp<=0] = 0
+#     temp[temp > 0] = 1
+#     imagesArr.append(temp)
+#
+# # imagesArr = np.round(imagesArr/np.max(imagesArr), 1)
+# show_images(imagesArr, 1, titles="Involvement of each model in the input feature and performance of new model")
 
 
 def show_images(images, cols, titles):
@@ -514,18 +556,18 @@ def show_images(images, cols, titles):
     # assert ((titles is None) or (len(images) == len(titles)))
     n_images = len(images)
     if titles is None: titles = ['Image (%d)' % i for i in range(1, n_images + 1)]
-    fig = plt.figure(num=None, figsize=(16, 12), dpi=100, facecolor='w', edgecolor='k')
+    fig = plt.figure(num=None, figsize=(16, 10), dpi=100, facecolor='w', edgecolor='k')
     fig.suptitle(titles)
     for n, (image, title) in enumerate(zip(images, titles)):
         # a = fig.add_subplot(cols, np.ceil(n_images / float(cols)), n + 1)
-        a = fig.add_subplot(6, 4, n + 1)
-        plt.axis([0, len(image[0]), 0, len(image)])
+        a = fig.add_subplot(2, 2, n + 1)
+        plt.axis([32, len(image[0]), 22, len(image)])
         # image[image >= 0] = 0
         # image[image > 10] = 0
         x, y = image.nonzero()
         c = image[x, y]
 
-        im = plt.scatter(y[:], x[:], c=c[:], cmap='jet', s=1)
+        im = plt.scatter(y[:], x[:], c=c[:], cmap='jet')
         if n == 8:
             plt.ylabel('Vertical Grid')
         if n == 21:
@@ -534,16 +576,71 @@ def show_images(images, cols, titles):
     cbar_ax = fig.add_axes([0.92, 0.15, 0.01, 0.7])
     fig.colorbar(im, cax=cbar_ax)
     # plt.show()
-    plt.savefig('n_involvement_of_each_model_new.png')
+    plt.savefig('influence_of_3_13_20_22.png')
 
 #read MAE and RMSE files
 readData = pd.read_csv('n_complicated_2vlatest.csv', header=None)
 imagesArr = []
-for i in range(24):
-    temp = pd.to_numeric(np.array(readData[i])[:]).reshape((44, 65))
-    temp[temp<=0] = 0
-    temp[temp > 0] = 1
-    imagesArr.append(temp)
+temp1 = pd.to_numeric(np.array(readData[2])[:]).reshape((44, 65))
+temp2 = pd.to_numeric(np.array(readData[12])[:]).reshape((44, 65))
+temp3 = pd.to_numeric(np.array(readData[19])[:]).reshape((44, 65))
+temp4 = pd.to_numeric(np.array(readData[21])[:]).reshape((44, 65))
+
+imagesArr.append(temp1)
+imagesArr.append(temp2)
+imagesArr.append(temp3)
+imagesArr.append(temp4)
+
+imagesArr = np.array(imagesArr)
+imagesArr[imagesArr <= 0] = 0
+imagesArr[imagesArr > 0] = 1
+
 
 # imagesArr = np.round(imagesArr/np.max(imagesArr), 1)
-show_images(imagesArr, 1, titles="Involvement of each model in the input feature and performance of new model")
+show_images(imagesArr, 1, titles="Influence of Model 3, 13, 20 and 22")
+
+# def show_images(images, cols, titles):
+#     min_v = np.nanmin(images)
+#     max_v = np.nanmax(images[images != np.inf])
+#     print(min_v, max_v)
+#     # assert ((titles is None) or (len(images) == len(titles)))
+#     n_images = len(images)
+#     if titles is None: titles = ['Image (%d)' % i for i in range(1, n_images + 1)]
+#     fig = plt.figure(num=None, figsize=(16, 5), dpi=100, facecolor='w', edgecolor='k')
+#     fig.suptitle(titles)
+#     for n, (image, title) in enumerate(zip(images, titles)):
+#         # a = fig.add_subplot(cols, np.ceil(n_images / float(cols)), n + 1)
+#         a = fig.add_subplot(1, 2, n + 1)
+#         plt.axis([32, len(image[0]), 22, len(image)])
+#         # image[image >= 0] = 0
+#         # image[image > 10] = 0
+#         x, y = image.nonzero()
+#         c = image[x, y]
+#
+#         im = plt.scatter(y[:], x[:], c=c[:], cmap='jet')
+#         if n == 8:
+#             plt.ylabel('Vertical Grid')
+#         if n == 21:
+#             plt.xlabel('Horizontal Grid')
+#         plt.clim(min_v, max_v)
+#     cbar_ax = fig.add_axes([0.92, 0.15, 0.01, 0.7])
+#     fig.colorbar(im, cax=cbar_ax)
+#     # plt.show()
+#     plt.savefig('influence_of_14_23.png')
+#
+# #read MAE and RMSE files
+# readData = pd.read_csv('n_complicated_2vlatest.csv', header=None)
+# imagesArr = []
+# temp1 = pd.to_numeric(np.array(readData[13])[:]).reshape((44, 65))
+# temp2 = pd.to_numeric(np.array(readData[22])[:]).reshape((44, 65))
+#
+# imagesArr.append(temp1)
+# imagesArr.append(temp2)
+#
+# imagesArr = np.array(imagesArr)
+# imagesArr[imagesArr <= 0] = 0
+# imagesArr[imagesArr > 0] = 1
+#
+#
+# # imagesArr = np.round(imagesArr/np.max(imagesArr), 1)
+# show_images(imagesArr, 1, titles="Influence of Models 14 and 23")
